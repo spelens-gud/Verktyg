@@ -1,0 +1,3 @@
+#!/bin/sh
+golangci-lint run ./... || exit 1
+goimports -format-only -w -l -local `go list -m` ./  | xargs git add
