@@ -51,7 +51,7 @@ func LoadRefJson(in []byte, loadFunc RefLoadFunc) (out []byte, err error) {
 			delete(v, refKey)
 		//	字符串
 		case string:
-			if !(strings.HasPrefix(v, prefix) && strings.HasSuffix(v, suffix)) {
+			if !strings.HasPrefix(v, prefix) || !strings.HasSuffix(v, suffix) {
 				continue
 			}
 			refKey := v[len(prefix) : len(v)-len(suffix)]

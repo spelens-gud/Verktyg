@@ -33,6 +33,7 @@ func (c *client) Consume(groupID string, topics []string, handleFunc func(ctx co
 		return
 	}
 	return func(ctx context.Context) {
+		// nolint
 		defer consumer.Close()
 		consumer.StartConsumeWithHandler(ctx, topics, &consumerGroupFuncHandler{
 			onMessage: func(ctx context.Context, session ikafka.ConsumerGroupSession, msg *sarama.ConsumerMessage) error {
@@ -52,6 +53,7 @@ func (c *clusterClient) Consume(groupID string, topics []string, handleFunc func
 		return
 	}
 	return func(ctx context.Context) {
+		// nolint
 		defer consumer.Close()
 		consumer.ConsumeWithHandler(ctx, clusterConsumeFuncHandler{
 			onError: defaultOnError,

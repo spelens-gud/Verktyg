@@ -24,6 +24,7 @@ func TestExtractRequestID(t *testing.T) {
 	tr, _ := skytrace.NewGrpcTracer("testxxx", "localhost:11800", func(opt *skytrace.TraceOption) {
 		opt.SampleRate = 1
 	})
+	// nolint
 	defer tr.Close()
 
 	for i := 0; i < 100; i++ {
@@ -46,6 +47,7 @@ func BenchmarkSpan(b *testing.B) {
 	}
 	_ = os.Setenv(iconfig.EnvKeyRuntimeMetricsEnable, "1")
 	tracer.SetTracer(tr)
+	// nolint
 	defer tr.Close()
 	e := kserver.NewGinEngine()
 	e.Use(gin_middles.DefaultChain()...)
@@ -53,6 +55,7 @@ func BenchmarkSpan(b *testing.B) {
 	if err != nil {
 		b.Fatal(err)
 	}
+	// nolint
 	defer rd.Close()
 	pprof.RouteRegister(e.Group(""))
 

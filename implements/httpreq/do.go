@@ -3,8 +3,8 @@ package httpreq
 import (
 	"bytes"
 	"context"
+	"errors"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"time"
 
@@ -64,9 +64,9 @@ func doRequest(cli *http.Client, request *http.Request, opts ...ihttp.ReqOpt) (r
 
 	// 如果deadline exceeded 转化为 code error
 	defer func() {
-		if err == context.DeadlineExceeded {
+		if errors.Is(err, context.DeadlineExceeded) {
 			err = errorx.ErrDeadlineExceeded("do http request context error: " + err.Error())
-		} else if err == context.Canceled {
+		} else if errors.Is(err, context.Canceled) {
 			err = errorx.ErrCancelled("do http request context error: " + err.Error())
 		}
 	}()
@@ -100,7 +100,7 @@ func doRequest(cli *http.Client, request *http.Request, opts ...ihttp.ReqOpt) (r
 			readerCarrier = &struct{ io.Reader }{io.TeeReader(request.Body, newBuffer)}
 		)
 
-		request.Body = ioutil.NopCloser(readerCarrier)
+		request.Body = io.NopCloser(readerCarrier)
 		request.GetBody = func() (io.ReadCloser, error) {
 			if readerPtr == nil {
 				readerPtr = bytes.NewReader(newBuffer.Bytes())

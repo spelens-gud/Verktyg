@@ -2,6 +2,7 @@ package gormctx
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"strings"
 	"time"
@@ -27,7 +28,7 @@ func (g *gormLogger) Print(v ...interface{}) {
 		if e, isErr := v[2].(error); isErr {
 			// 忽略 context.Canceled 和 TCP取消连接
 			errMsg := e.Error()
-			if !(e == context.Canceled || strings.Contains(errMsg, "dial tcp: operation was canceled")) {
+			if !errors.Is(e, context.Canceled) && !strings.Contains(errMsg, "dial tcp: operation was canceled") {
 				lg = lg.WithTag("MYSQL_ERR")
 			}
 			lg.WithField("file", v[1]).Errorf(errMsg)

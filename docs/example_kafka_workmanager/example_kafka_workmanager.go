@@ -37,6 +37,7 @@ func main() {
 	if err != nil {
 		return
 	}
+	// nolint
 	defer client.Close()
 
 	// 初始化管理框架

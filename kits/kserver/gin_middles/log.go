@@ -3,7 +3,6 @@ package gin_middles
 import (
 	"bytes"
 	"io"
-	"io/ioutil"
 	"strings"
 	"time"
 
@@ -71,7 +70,7 @@ func GinLogger(opts ...func(*LogOption)) gin.HandlerFunc {
 			copyBuff = buffpool.GetBytesBuffer()
 			defer buffpool.PutBytesBuffer(copyBuff)
 
-			request.Body = ioutil.NopCloser(io.TeeReader(request.Body, copyBuff))
+			request.Body = io.NopCloser(io.TeeReader(request.Body, copyBuff))
 			cookieData = c.Request.Header.Get("Cookie")
 		}
 

@@ -14,6 +14,7 @@ import (
 
 func NewResp(response *http.Response) (res ihttp.Resp, err error) {
 	originBody := response.Body
+	// nolint
 	defer originBody.Close()
 	buf := buffpool.GetBytesBuffer()
 	if _, err = buf.ReadFrom(originBody); err != nil {

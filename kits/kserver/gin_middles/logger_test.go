@@ -2,7 +2,7 @@ package gin_middles
 
 import (
 	"bytes"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"testing"
 
@@ -27,7 +27,7 @@ func TestLogger(t *testing.T) {
 		//panic("xxx")
 	})
 	eg.POST("/test", func(c *gin.Context) {
-		b, _ := ioutil.ReadAll(c.Request.Body)
+		b, _ := io.ReadAll(c.Request.Body)
 		logger.FromContext(c.Request.Context()).Infof("%s", b)
 		//logger.FromContext(ctx).Error("test")
 		//panic("xxx")

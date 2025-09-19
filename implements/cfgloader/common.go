@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"runtime"
@@ -122,7 +121,7 @@ func writeConfig(configRoot interface{}, file string) (err error) {
 	if err = os.MkdirAll(filepath.Dir(file), 0775); err != nil {
 		return
 	}
-	return ioutil.WriteFile(file, data, 0664)
+	return os.WriteFile(file, data, 0664)
 }
 
 func loadFromBytes(ctx context.Context, f func() ([]byte, error), configRoot interface{}, typ iconfig.ConfigType) (err error) {

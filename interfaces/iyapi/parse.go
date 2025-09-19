@@ -29,7 +29,7 @@ func ParseTestSample2YapiData(st *itest.Sample) (data ApiUploadData) {
 				if f.Name == p {
 					apiReqData.ReqParams = append(apiReqData.ReqQuery, ReqKVItemSimple{
 						Name: p,
-						Desc: strings.Join([]string{f.Type, strings.Replace(f.Comment, "//", "", -1)}, "\t"),
+						Desc: strings.Join([]string{f.Type, strings.ReplaceAll(f.Comment, "//", "")}, "\t"),
 					})
 					break
 				}
@@ -46,7 +46,7 @@ func ParseTestSample2YapiData(st *itest.Sample) (data ApiUploadData) {
 			for _, f := range queryTs[0].Fields {
 				apiReqData.ReqQuery = append(apiReqData.ReqQuery, ReqKVItemSimple{
 					Name: f.Name,
-					Desc: strings.Join([]string{f.Type, strings.Replace(f.Comment, "//", "", -1)}, "\t"),
+					Desc: strings.Join([]string{f.Type, strings.ReplaceAll(f.Comment, "//", "")}, "\t"),
 				})
 			}
 		}

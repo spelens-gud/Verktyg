@@ -3,7 +3,6 @@ package gin_middles
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
 	"net"
 	"net/http/httputil"
 	"os"
@@ -104,7 +103,7 @@ func stack(skip int) (b []byte) {
 		}
 		_, _ = fmt.Fprintf(buf, "%s:%d (0x%x)\n", file, line, pc)
 		if file != lastFile {
-			data, err := ioutil.ReadFile(file)
+			data, err := os.ReadFile(file)
 			if err != nil {
 				continue
 			}
@@ -136,7 +135,7 @@ func function(pc uintptr) []byte {
 	if period := bytes.Index(name, dot); period >= 0 {
 		name = name[period+1:]
 	}
-	name = bytes.Replace(name, centerDot, dot, -1)
+	name = bytes.ReplaceAll(name, centerDot, dot)
 	return name
 }
 

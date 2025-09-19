@@ -161,6 +161,7 @@ func (c *client) autoRefresh(ctx context.Context) {
 }
 
 func (c *client) login(ctx context.Context) (accessToken string, err error) {
+	// nolint
 	resp, err := c.cli.Post(ctx, authPath, c.NacosConfig.AuthConfig)
 	if err != nil {
 		return
@@ -192,6 +193,7 @@ func (c *client) makeListenReq(ctx context.Context, data ListenConfigData) (req 
 			identSplitConfigInner))
 		bf.WriteString(identSplitConfig)
 	}
+	// nolint
 	u, err := url.Parse(c.NacosConfig.Endpoint)
 	if err != nil {
 		return

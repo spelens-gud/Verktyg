@@ -94,15 +94,15 @@ func (st StackTrace) Format(s fmt.State, verb rune) {
 		switch {
 		case s.Flag('+'):
 			for _, f := range st {
-				fmt.Fprintf(s, "\n%+v", f)
+				_, _ = fmt.Fprintf(s, "\n%+v", f)
 			}
 		case s.Flag('#'):
-			fmt.Fprintf(s, "%#v", []Frame(st))
+			_, _ = fmt.Fprintf(s, "%#v", []Frame(st))
 		default:
-			fmt.Fprintf(s, "%v", []Frame(st))
+			_, _ = fmt.Fprintf(s, "%v", []Frame(st))
 		}
 	case 's':
-		fmt.Fprintf(s, "%s", []Frame(st))
+		_, _ = fmt.Fprintf(s, "%s", []Frame(st))
 	}
 }
 
@@ -116,7 +116,7 @@ func (s *stack) Format(st fmt.State, verb rune) {
 		case st.Flag('+'):
 			for _, pc := range *s {
 				f := Frame(pc)
-				fmt.Fprintf(st, "\n%+v", f)
+				_, _ = fmt.Fprintf(st, "\n%+v", f)
 			}
 		}
 	}

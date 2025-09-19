@@ -19,6 +19,7 @@ func (s *Span) SetPeer(peer string) {
 }
 
 func (s *Span) SetLayer(i int) {
+	// nolint
 	s.Span.SetTag("layer", itrace.GetSpanLayerName(i))
 }
 
@@ -32,10 +33,12 @@ func (s *Span) SetComponent(i int) {
 }
 
 func (s *Span) Tag(key, value string) {
+	// nolint
 	s.Span.SetTag(key, value)
 }
 
 func (s *Span) Log(level, msg string, fields map[string]interface{}) {
+	// nolint
 	s.Span.LogFields(parseLogFields(level, msg, fields)...)
 }
 

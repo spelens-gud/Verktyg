@@ -21,6 +21,7 @@ func (r *redisClusterClient) Raw() redis.UniversalClient {
 }
 
 func (r *redisClusterClient) GetRedis(ctx context.Context) redis.Cmdable {
+	// nolint
 	return r.ClusterClient.WithContext(ctx)
 }
 

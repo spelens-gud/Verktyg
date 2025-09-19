@@ -5,7 +5,6 @@ import (
 	"go/ast"
 	"go/parser"
 	"go/token"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -112,7 +111,7 @@ func (em Enumap) ReplaceWith(in string, repFunc func(e Enum) string) string {
 		if !ok {
 			continue
 		}
-		in = strings.Replace(in, fs[0], repFunc(e), -1)
+		in = strings.ReplaceAll(in, fs[0], repFunc(e))
 	}
 	return in
 }
@@ -136,7 +135,7 @@ func Search(file string) (enumap Enumap) {
 		if len(info.Name()) > 3 && info.Name()[len(info.Name())-3:] != ".go" || info.IsDir() {
 			return nil
 		}
-		b, err := ioutil.ReadFile(path)
+		b, err := os.ReadFile(path)
 		if err != nil {
 			return nil
 		}
@@ -152,11 +151,11 @@ func Search(file string) (enumap Enumap) {
 			if len(matches) != 2 {
 				continue
 			}
-			desc := strings.Replace(text, matches[0], "", -1)
+			desc := strings.ReplaceAll(text, matches[0], "")
 			e := Enum{
 				List: make([]Item, 0, len(decl.Specs)),
 				Name: matches[1],
-				Desc: strings.TrimSpace(strings.Replace(desc, "\n", " ", -1)),
+				Desc: strings.TrimSpace(strings.ReplaceAll(desc, "\n", " ")),
 			}
 			for _, sp := range decl.Specs {
 				v, ok := sp.(*ast.ValueSpec)

@@ -31,6 +31,7 @@ const (
 	SpanTypeLocal = "local"
 )
 
+// nolint
 var unknownErr = errors.New("unknown error")
 
 func setHttpTag(span Span, req *http.Request) {

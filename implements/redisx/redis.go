@@ -22,6 +22,7 @@ func (r *redisClient) Raw() redis.UniversalClient {
 }
 
 func (r *redisClient) GetRedis(ctx context.Context) redis.Cmdable {
+	// nolint
 	return r.Client.WithContext(ctx)
 }
 

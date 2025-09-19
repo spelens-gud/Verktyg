@@ -2,7 +2,6 @@ package structgraphx
 
 import (
 	"context"
-	"io/ioutil"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -26,7 +25,7 @@ func GenStructGraph(in interface{}, filename string, opts ...structgraph.Option)
 	_ = os.MkdirAll(filepath.Dir(filename), 0775)
 
 	if _, e := exec.LookPath("dot"); e == nil {
-		if err := ioutil.WriteFile("design/structure.dot", []byte(structgraph.Draw(in)), 0664); err != nil {
+		if err := os.WriteFile("design/structure.dot", []byte(structgraph.Draw(in)), 0664); err != nil {
 			return
 		}
 		defer func() {

@@ -3,7 +3,6 @@ package skafka
 import (
 	"context"
 	"io"
-	"io/ioutil"
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
@@ -51,7 +50,7 @@ func parseMessageBody(value interface{}) (encoder sarama.Encoder, err error) {
 		encoder = sarama.ByteEncoder(v)
 	case io.Reader:
 		var b []byte
-		if b, err = ioutil.ReadAll(v); err != nil {
+		if b, err = io.ReadAll(v); err != nil {
 			return
 		}
 		encoder = sarama.ByteEncoder(b)
@@ -233,6 +232,7 @@ func (s *asyncProducer) initMessageTelemetry(ctx context.Context, msg *sarama.Pr
 
 func (s *asyncProducer) SendMessage(ctx context.Context, msg *sarama.ProducerMessage) (err error) {
 	s.initMessageTelemetry(ctx, msg)
+	// nolint
 	s.AsyncProducer.Input() <- msg
 	return nil
 }

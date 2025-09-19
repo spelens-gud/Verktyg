@@ -2,7 +2,7 @@ package logger_test
 
 import (
 	"context"
-	"io/ioutil"
+	"io"
 	"log"
 	"os"
 	"testing"
@@ -21,7 +21,7 @@ func init() {
 func BenchmarkInitLogger(b *testing.B) {
 	b.ReportAllocs()
 	logger.SetLevel(ilog.Error)
-	logger.SetOutput(ioutil.Discard)
+	logger.SetOutput(io.Discard)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		logger.FromContext(ctx).Info("1")
@@ -32,7 +32,7 @@ func BenchmarkStandardLogger(b *testing.B) {
 	b.ReportAllocs()
 	logger.InitStandardLogger()
 	logger.SetLevel(ilog.Info)
-	logger.SetOutput(ioutil.Discard)
+	logger.SetOutput(io.Discard)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		log.Print("xx")
@@ -42,7 +42,7 @@ func BenchmarkStandardLogger(b *testing.B) {
 func BenchmarkLoggerDoLog(b *testing.B) {
 	b.ReportAllocs()
 	logger.SetLevel(ilog.Info)
-	logger.SetOutput(ioutil.Discard)
+	logger.SetOutput(io.Discard)
 	b.ResetTimer()
 	lg := logger.FromContext(ctx)
 	for i := 0; i < b.N; i++ {
@@ -52,7 +52,7 @@ func BenchmarkLoggerDoLog(b *testing.B) {
 
 func BenchmarkLogZap(b *testing.B) {
 	b.ReportAllocs()
-	e := zaplog.NewEntry(ioutil.Discard)
+	e := zaplog.NewEntry(io.Discard)
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		e.Info("1")

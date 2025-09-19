@@ -14,6 +14,7 @@ type tracePatch struct {
 	ilog.Logger
 }
 
+// nolint
 func (_ tracePatch) Patch(ctx context.Context, logger ilog.Logger) ilog.Logger {
 	if ctx == ctxBackground || tracer.IsNoop() {
 		return logger

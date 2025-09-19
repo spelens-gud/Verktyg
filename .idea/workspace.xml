@@ -4,7 +4,66 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2ef399-8dc7-4e84-b5a5-30733d87129d" name="Default Changelist" comment="Default Changelist" />
+    <list default="true" id="a8016b45-0c87-45be-a4c7-7948987b6d10" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/go-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/go-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example_httpreq/example_httpreq.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_httpreq/example_httpreq.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example_kafka/example_kafka.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_kafka/example_kafka.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example_kafka_workmanager/example_kafka_workmanager.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_kafka_workmanager/example_kafka_workmanager.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/example_mysql/example_mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_mysql/example_mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/cfgloader/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/cfgloader/common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/cfgloader/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/cfgloader/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/cfgloader/sdk_nacos/nacos.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/cfgloader/sdk_nacos/nacos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/gormctx/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/gormctx/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/httpreq/client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/client_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/httpreq/do.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/do.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/httpreq/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/httpreq/url_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/url_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/otrace/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/otrace/span.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/span.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/otrace/tracer.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/tracer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/otrace/tracer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/tracer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/promgateway/gateway_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/promgateway/gateway_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/redisx/cluster.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/redisx/cluster.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/redisx/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/redisx/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/redisx/redis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/redisx/redis_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skafka/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skafka/consumer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skafka/example_cluster_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skafka/example_cluster_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skafka/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skafka/producer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/client_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skytrace/span.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skytrace/span.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/skytrace/test/tracer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skytrace/test/tracer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/implements/zaplog/log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/zaplog/log_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/iconfig/info.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/iconfig/info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/iconfig/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/iconfig/string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/itrace/tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/itrace/tag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/itrace/trace.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/itrace/trace.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/iyapi/parse.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/iyapi/parse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kdoc/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kdoc/enumx/search.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/enumx/search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kdoc/go2ts/go2ts.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/go2ts/go2ts.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kdoc/path.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/path.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kerror/internal/errors/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kerror/internal/errors/stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kgo/cachew/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kgo/cachew/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kgo/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kgo/string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kjson/ref_loader.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kjson/ref_loader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/klog/bufferedwriter/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/bufferedwriter/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/klog/bufferedwriter/write_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/bufferedwriter/write_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/klog/logger/internal/instance.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/logger/internal/instance.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/klog/logger/log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/logger/log_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/klog/logger/trace.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/logger/trace.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kserver/gin_middles/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/gin_middles/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kserver/gin_middles/logger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/gin_middles/logger_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kserver/gin_middles/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/gin_middles/recovery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kserver/server_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/server_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kits/kstruct/structgraphx/structgraph.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kstruct/structgraphx/structgraph.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,72 +73,51 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitLabMergeRequestFiltersHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPENED&quot;,
-    &quot;assignee&quot;: {
-      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
-      &quot;username&quot;: &quot;1a9d3ge4&quot;,
-      &quot;fullname&quot;: &quot;罗东就&quot;
+  <component name="GitLabMergeRequestFiltersHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPENED",
+    "assignee": {
+      "type": "org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue",
+      "username": "1a9d3ge4",
+      "fullname": "罗东就"
     }
   }
-}</component>
-  <component name="GitLabMergeRequestsSettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;first&quot;: &quot;https://git.bestfulfill.tech/devops/go-core.git&quot;,
-    &quot;second&quot;: &quot;132e9c40-519a-46b7-9077-eb0860ef2208&quot;
+}]]></component>
+  <component name="GitLabMergeRequestsSettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "first": "https://git.bestfulfill.tech/devops/go-core.git",
+    "second": "132e9c40-519a-46b7-9077-eb0860ef2208"
   }
-}</component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="false" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="1g4QAMsVeMhSxaXpAA8z88DRV58" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="32uTlVctxtHSI0tAGT34SLLgboP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Makefile 目标.lint.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/joeluo/go-project/go-core&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoLibrariesConfigurableProvider&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/joeluo/go-project/go-core",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="lint" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="lint" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Makefile 目标.lint" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,13 +126,13 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <created>1758266714622</created>
+      <changelist id="a8016b45-0c87-45be-a4c7-7948987b6d10" name="更改" comment="" />
+      <created>1758269608515</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1758266714622</updated>
+      <updated>1758269608515</updated>
     </task>
     <servers />
   </component>
@@ -102,7 +140,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
   </component>
 </project>

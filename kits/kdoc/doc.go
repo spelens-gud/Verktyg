@@ -4,7 +4,7 @@ import (
 	"go/ast"
 	"go/parser"
 	"go/token"
-	"io/ioutil"
+	"os"
 	"path"
 	"reflect"
 	"strings"
@@ -25,7 +25,7 @@ func getStructFieldsDoc(tpy reflect.Type) (res map[string]string) {
 	if !ok {
 		return
 	}
-	d, err := ioutil.ReadDir(importPath)
+	d, err := os.ReadDir(importPath)
 	if err != nil {
 		return
 	}
@@ -34,7 +34,7 @@ func getStructFieldsDoc(tpy reflect.Type) (res map[string]string) {
 		if d.IsDir() || !strings.HasSuffix(d.Name(), ".go") || strings.HasSuffix(d.Name(), "_test.go") {
 			continue
 		}
-		fileData, _ := ioutil.ReadFile(path.Join(importPath, d.Name()))
+		fileData, _ := os.ReadFile(path.Join(importPath, d.Name()))
 		f, err := parser.ParseFile(token.NewFileSet(), "", fileData, parser.ParseComments)
 		if err != nil {
 			continue
@@ -61,10 +61,10 @@ func getStructFieldsDoc(tpy reflect.Type) (res map[string]string) {
 			}
 			fieldName := f.Names[0].Name
 			if f.Comment != nil {
-				res[fieldName] += strings.Replace(f.Comment.Text(), "\n", " ", -1) + " "
+				res[fieldName] += strings.ReplaceAll(f.Comment.Text(), "\n", " ") + " "
 			}
 			if f.Doc != nil {
-				res[fieldName] += strings.Replace(f.Doc.Text(), "\n", " ", -1) + " "
+				res[fieldName] += strings.ReplaceAll(f.Doc.Text(), "\n", " ") + " "
 			}
 			res[fieldName] = strings.TrimSpace(res[fieldName])
 			if len(res[fieldName]) == 0 {

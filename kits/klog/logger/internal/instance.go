@@ -78,6 +78,7 @@ func (i *instance) initLogger() *instance {
 		}).Info("logger init")
 
 		if i.Logger = logger; !opt.level.EnableAll() {
+			// nolint
 			i.Logger = i.Logger.AddCallerSkip(1)
 		}
 		i.ContextLogger = initContextLogger(ctxBackground, i.Logger)

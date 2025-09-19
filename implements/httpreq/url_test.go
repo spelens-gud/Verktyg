@@ -2,7 +2,7 @@ package httpreq
 
 import (
 	"context"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"testing"
 
@@ -15,7 +15,7 @@ import (
 var cli = NewFormClient("http://localhost")
 
 var h = http.HandlerFunc(func(writer http.ResponseWriter, request *http.Request) {
-	b, _ := ioutil.ReadAll(request.Body)
+	b, _ := io.ReadAll(request.Body)
 	_, _ = writer.Write(b)
 })
 

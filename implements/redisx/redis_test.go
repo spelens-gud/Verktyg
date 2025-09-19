@@ -18,6 +18,7 @@ func TestRedisCancel(t *testing.T) {
 	if err != nil {
 		t.Fatalf("%+v", err)
 	}
+	// nolint
 	defer cli.Close()
 
 	ctx, cf := context.WithCancel(context.Background())
@@ -36,6 +37,7 @@ func TestRedis(t *testing.T) {
 	if err != nil {
 		t.Fatalf("%+v", err)
 	}
+	// nolint
 	defer cli.Close()
 
 	eg := errgroup.Group{}
@@ -87,6 +89,7 @@ func TestRedisCluster(t *testing.T) {
 	if err != nil {
 		t.Fatalf("%+v", err)
 	}
+	// nolint
 	defer cli.Close()
 
 	eg := errgroup.Group{}

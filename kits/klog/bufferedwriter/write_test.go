@@ -1,13 +1,14 @@
 package bufferedwriter
 
 import (
-	"io/ioutil"
+	"io"
 	"testing"
 )
 
 func BenchmarkW(b *testing.B) {
 	d := []byte{'x'}
-	writer := NewBypassBufferedWriter(ioutil.Discard, NewZapBufferedWriter)
+	writer := NewBypassBufferedWriter(io.Discard, NewZapBufferedWriter)
+	// nolint
 	defer writer.Close()
 	b.ReportAllocs()
 	b.ResetTimer()

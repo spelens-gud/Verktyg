@@ -76,6 +76,7 @@ func (t Tracer) InjectMetadata(ctx context.Context, name, peer string, metadata 
 func (t Tracer) injectMetadata(ctx context.Context, name, peer string, metadata map[string][]string, extReqIDKeys ...string) (span *Span) {
 	itrace.SetMetadataRequestID(itrace.FromContext(ctx), metadata, extReqIDKeys...)
 	sp := t.startExitSpan(ctx, name, peer)
+	// nolint
 	_ = opentracing.GlobalTracer().Inject(sp.Span.Context(), opentracing.HTTPHeaders, opentracing.HTTPHeadersCarrier(metadata))
 	return sp
 }

@@ -39,11 +39,13 @@ func TestCluster(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	// nolint
 	defer clusterClient.Close()
 	consumer, err := clusterClient.NewConsumer("groupID", []string{"skafka-test"})
 	if err != nil {
 		t.Fatal(err)
 	}
+	// nolint
 	defer consumer.Close()
 	// 使用处理器消费
 	ctx, cancel := context.WithCancel(context.Background())

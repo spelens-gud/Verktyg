@@ -2,7 +2,7 @@ package cachew_test
 
 import (
 	"context"
-	"io/ioutil"
+	"io"
 	"net"
 	"net/http"
 	"testing"
@@ -35,8 +35,9 @@ func loadFromHttp(ctx context.Context) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
+	// nolint
 	defer resp.Body.Close()
-	return ioutil.ReadAll(resp.Body)
+	return io.ReadAll(resp.Body)
 }
 
 func NewCacheW() cachew.CacheW {

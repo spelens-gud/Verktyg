@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"net/url"
 	"testing"
@@ -37,7 +37,7 @@ func TestBytes(t *testing.T) {
 
 	t.Logf("%s", bys)
 	t.Logf("%s", b)
-	_, _ = ioutil.ReadAll(b)
+	_, _ = io.ReadAll(b)
 	t.Logf("%s", bys)
 	t.Logf("%s", b)
 }
@@ -68,7 +68,7 @@ func TestTransport(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	_, err = ioutil.ReadAll(resp.Body)
+	_, err = io.ReadAll(resp.Body)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -84,7 +84,7 @@ func TestDoTransportOpt(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	_, err = ioutil.ReadAll(resp.Body)
+	_, err = io.ReadAll(resp.Body)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -140,7 +140,7 @@ func TestRetryPost(t *testing.T) {
 	go func() {
 		e := gin.New()
 		e.POST("/r", func(c *gin.Context) {
-			b, _ := ioutil.ReadAll(c.Request.Body)
+			b, _ := io.ReadAll(c.Request.Body)
 			t.Logf("%s", b)
 			c.AbortWithStatus(500)
 		})
@@ -161,7 +161,7 @@ func TestRetryPost(t *testing.T) {
 	_ = json.NewEncoder(bf).Encode(&te)
 
 	ctx := context.Background()
-	resp, err := cli.Post(ctx, "", ioutil.NopCloser(bf), WithHttpDoOption(&HttpDoOption{
+	resp, err := cli.Post(ctx, "", io.NopCloser(bf), WithHttpDoOption(&HttpDoOption{
 		MaxRetryTimes: 10,
 	}))
 	if err != nil {

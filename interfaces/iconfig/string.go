@@ -7,6 +7,7 @@ type configString struct {
 	Init func() string
 }
 
+// nolint
 func (c *configString) Set(str string) { c.String.Store(str) }
 
 func (c *configString) Get() string {

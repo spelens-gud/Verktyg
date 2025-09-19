@@ -24,6 +24,7 @@ func TestExtractRequestID(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	// nolint
 	defer cf.Close()
 	opentracing.SetGlobalTracer(tracer)
 

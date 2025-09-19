@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"io/ioutil"
+	"io"
 	"math/rand"
 	"net/http"
 	"strconv"
@@ -62,10 +62,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	// nolint
 	defer rawResp.Body.Close()
 
 	// 读取返回
-	data, err := ioutil.ReadAll(rawResp.Body)
+	data, err := io.ReadAll(rawResp.Body)
 	if err != nil {
 		panic(err)
 	}

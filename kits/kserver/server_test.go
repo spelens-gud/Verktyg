@@ -1,7 +1,7 @@
 package kserver
 
 import (
-	"io/ioutil"
+	"io"
 	"math/rand"
 	"net/http"
 	"testing"
@@ -90,8 +90,9 @@ func TestServerCli(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
+	// nolint
 	defer resp.Body.Close()
-	b, _ := ioutil.ReadAll(resp.Body)
+	b, _ := io.ReadAll(resp.Body)
 	t.Logf("%s", b)
 	time.Sleep(time.Second)
 }

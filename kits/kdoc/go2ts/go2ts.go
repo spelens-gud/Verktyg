@@ -149,6 +149,7 @@ func (p *Parser) appendStrutField(in interface{}, typ *idoc.TsType, commentDesc 
 			continue
 		}
 		if f.Anonymous {
+			// nolint
 			if !(f.Type.Kind() == reflect.Ptr && s.Field(i).IsNil()) {
 				p.appendStrutField(s.Field(i).Interface(), typ, commentDesc)
 			}

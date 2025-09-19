@@ -13,6 +13,7 @@ type zapBuffWriter struct {
 }
 
 func (w *zapBuffWriter) Flush() {
+	// nolint
 	_ = w.BufferedWriteSyncer.Sync()
 }
 

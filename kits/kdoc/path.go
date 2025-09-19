@@ -2,7 +2,7 @@ package kdoc
 
 import (
 	"bytes"
-	"io/ioutil"
+	"os"
 	"os/exec"
 	"path/filepath"
 	"regexp"
@@ -31,7 +31,7 @@ func getModBase() string {
 	if len(modBase) > 0 {
 		return modBase
 	}
-	m, err := ioutil.ReadFile(getModPath())
+	m, err := os.ReadFile(getModPath())
 	if err != nil {
 		return ""
 	}
@@ -50,7 +50,7 @@ func getImportCodePath(importPath string) (serviceCodePath string, ok bool) {
 		// 根据go.mod定位
 		modPath := getModPath()
 		modDir := filepath.Dir(filepath.ToSlash(modPath))
-		serviceCodePath = strings.Replace(importPath, modBase, modDir, -1)
+		serviceCodePath = strings.ReplaceAll(importPath, modBase, modDir)
 		ok = true
 		return
 	}

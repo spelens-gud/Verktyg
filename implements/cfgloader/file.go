@@ -3,7 +3,6 @@ package cfgloader
 import (
 	"context"
 	"errors"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -71,6 +70,6 @@ func loadFromFile(ctx context.Context, f string, configRoot interface{}) (err er
 	}
 
 	return loadFromBytes(ctx, func() ([]byte, error) {
-		return ioutil.ReadFile(f)
+		return os.ReadFile(f)
 	}, configRoot, typ)
 }

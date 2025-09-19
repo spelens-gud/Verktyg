@@ -32,7 +32,9 @@ func updateSpanTraceID(span opentracing.Span, traceID string) string {
 }
 
 func setJaegerSpanContextTraceID(sp *jaeger.Span, traceID jaeger.TraceID) {
+	// nolint
 	traceIDPtr := reflect.ValueOf(sp).Elem().FieldByName("context").FieldByName("traceID").UnsafeAddr()
+	// nolint
 	*(*jaeger.TraceID)(unsafe.Pointer(traceIDPtr)) = traceID
 }
 

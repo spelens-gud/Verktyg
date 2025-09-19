@@ -3,7 +3,6 @@ package zaplog_test
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"runtime"
 	"sync"
@@ -17,7 +16,7 @@ import (
 var output io.Writer
 
 func init() {
-	output = ioutil.Discard
+	output = io.Discard
 }
 
 func TestEntry_Info(t *testing.T) {

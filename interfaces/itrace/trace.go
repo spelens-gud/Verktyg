@@ -20,7 +20,7 @@ func SetIDFunc(f func() string) {
 }
 
 var newIDFunc = func() string {
-	return strings.Replace(uuid.New().String(), "-", "", -1)
+	return strings.ReplaceAll(uuid.New().String(), "-", "")
 }
 
 const keyTraceID = incontext.Key("context.trace_id")

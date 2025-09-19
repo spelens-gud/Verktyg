@@ -1,7 +1,6 @@
 package kgo
 
 import (
-	"reflect"
 	"unsafe"
 )
 
@@ -23,10 +22,8 @@ func InitStrings(strings ...string) string {
 }
 
 func UnsafeBytes2string(b []byte) string {
-	sliceHeader := (*reflect.SliceHeader)(unsafe.Pointer(&b))
-	// nolint
-	return *(*string)(unsafe.Pointer(&reflect.StringHeader{
-		Data: sliceHeader.Data,
-		Len:  sliceHeader.Len,
-	}))
+	if len(b) == 0 {
+		return ""
+	}
+	return unsafe.String(unsafe.SliceData(b), len(b))
 }

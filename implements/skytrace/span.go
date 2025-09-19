@@ -53,10 +53,12 @@ func (s *Span) Finish() {
 		return
 	}
 	s.end = true
+	// nolint
 	s.Span.End()
 }
 
 func (s *Span) SetLayer(i int) {
+	// nolint
 	s.Span.SetSpanLayer(v3.SpanLayer(i))
 }
 
