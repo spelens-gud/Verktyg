@@ -4,66 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8016b45-0c87-45be-a4c7-7948987b6d10" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/go-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/go-core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/example_httpreq/example_httpreq.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_httpreq/example_httpreq.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/example_kafka/example_kafka.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_kafka/example_kafka.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/example_kafka_workmanager/example_kafka_workmanager.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_kafka_workmanager/example_kafka_workmanager.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/example_mysql/example_mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/example_mysql/example_mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/cfgloader/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/cfgloader/common.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/cfgloader/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/cfgloader/file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/cfgloader/sdk_nacos/nacos.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/cfgloader/sdk_nacos/nacos.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/gormctx/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/gormctx/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/httpreq/client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/httpreq/do.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/do.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/httpreq/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/resp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/httpreq/url_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/httpreq/url_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/otrace/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/helper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/otrace/span.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/span.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/otrace/tracer.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/tracer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/otrace/tracer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/otrace/tracer_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/promgateway/gateway_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/promgateway/gateway_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/redisx/cluster.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/redisx/cluster.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/redisx/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/redisx/redis.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/redisx/redis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/redisx/redis_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skafka/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skafka/consumer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skafka/example_cluster_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skafka/example_cluster_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skafka/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skafka/producer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/client_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skytrace/agent/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skytrace/span.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skytrace/span.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/skytrace/test/tracer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/skytrace/test/tracer_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/implements/zaplog/log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/implements/zaplog/log_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/iconfig/info.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/iconfig/info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/iconfig/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/iconfig/string.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/itrace/tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/itrace/tag.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/itrace/trace.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/itrace/trace.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/iyapi/parse.go" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/iyapi/parse.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kdoc/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kdoc/enumx/search.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/enumx/search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kdoc/go2ts/go2ts.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/go2ts/go2ts.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kdoc/path.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kdoc/path.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kerror/internal/errors/stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kerror/internal/errors/stack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kgo/cachew/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kgo/cachew/example_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kgo/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kgo/string.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kjson/ref_loader.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kjson/ref_loader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/klog/bufferedwriter/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/bufferedwriter/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/klog/bufferedwriter/write_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/bufferedwriter/write_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/klog/logger/internal/instance.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/logger/internal/instance.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/klog/logger/log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/logger/log_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/klog/logger/trace.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/klog/logger/trace.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kserver/gin_middles/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/gin_middles/log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kserver/gin_middles/logger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/gin_middles/logger_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kserver/gin_middles/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/gin_middles/recovery.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kserver/server_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kserver/server_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kits/kstruct/structgraphx/structgraph.go" beforeDir="false" afterPath="$PROJECT_DIR$/kits/kstruct/structgraphx/structgraph.go" afterDir="false" />
-    </list>
+    <list default="true" id="a8016b45-0c87-45be-a4c7-7948987b6d10" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
