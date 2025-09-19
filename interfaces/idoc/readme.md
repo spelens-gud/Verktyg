@@ -1,0 +1,1 @@
+# jsonSchema和typescript序列化定义
