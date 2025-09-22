@@ -17,10 +17,6 @@ default:
   tags:
     - go-devops-runner
 
-workflow:
-  rules:
-    - when: always
-
 stages:
   - format
   - lint
