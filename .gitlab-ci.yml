@@ -14,7 +14,7 @@ variables:
 default:
   image: $GO_BUILD_IMAGES
   tags:
-    - go-runner
+    - go-devops-runner
 
 workflow:
   rules:
