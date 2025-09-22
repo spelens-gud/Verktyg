@@ -14,8 +14,7 @@ variables:
 default:
   image: $GO_BUILD_IMAGES
   tags:
-    - kubernetes
-    - go
+    - go-runner
 
 workflow:
   rules:
