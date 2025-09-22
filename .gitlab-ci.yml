@@ -13,6 +13,7 @@ variables:
 
 default:
   image: $GO_BUILD_IMAGES
+  pull_policy: if-not-present
   tags:
     - go-devops-runner
 
