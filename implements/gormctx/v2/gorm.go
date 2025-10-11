@@ -52,7 +52,9 @@ func InitGormV2Sql(config isql.SQLConfig, gormOpts ...func(*gorm.Config)) (sql i
 		return
 	}
 
-	gormCfg := &gorm.Config{}
+	gormCfg := &gorm.Config{
+		Logger: newGorm2Logger(),
+	}
 	for _, o := range gormOpts {
 		o(gormCfg)
 	}
