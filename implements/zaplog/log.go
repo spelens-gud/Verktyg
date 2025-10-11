@@ -155,15 +155,15 @@ func (e *Entry) WithFields(fields map[string]interface{}) ilog.Logger {
 		return e
 	}
 	entry := e.clone()
-	var omitParsed bool
+	// var omitParsed bool
 	for key, val := range fields {
-		if !omitParsed {
-			if parsedKey := ilog.ParseLogField(key, val); parsedKey == key {
-				omitParsed = true
-			} else {
-				key = parsedKey
-			}
-		}
+		//if !omitParsed {
+		//	if parsedKey := ilog.ParseLogField(key, val); parsedKey == key {
+		//		omitParsed = true
+		//	} else {
+		//		key = parsedKey
+		//	}
+		//}
 		entry.fieldData = append(entry.fieldData, val)
 		entry.fieldKey = append(entry.fieldKey, key)
 	}

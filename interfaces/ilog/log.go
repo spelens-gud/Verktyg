@@ -80,7 +80,7 @@ func ParseLogField(key string, value interface{}) (parsedKey string) {
 			if wrapLoggerList[f] {
 				continue
 			}
-			if strings.Contains(f, "sy-core@") || strings.Contains(f, "sy-core/") {
+			if strings.Contains(f, "go-core@") || strings.Contains(f, "go-core/") {
 				return key
 			}
 		}
