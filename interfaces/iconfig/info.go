@@ -39,6 +39,21 @@ func ExecName() string { return filepath.Base(execPath) }
 // 获取Hostname
 func HostName() string { return hostname.Get() }
 
+// 获取日志输出目录
+func GetLogFileDir() string {
+	{
+		if dir := os.Getenv(EnvKeyLogFileDir); len(dir) > 0 {
+			return dir
+		}
+		return ""
+	}
+}
+
+// 设置日志输出目录
+func SetLogFileDir(dir string) {
+	_ = os.Setenv(EnvKeyLogFileDir, dir)
+}
+
 // 获取应用命名空间
 func GetApplicationNameSpace() string { return namespace.Get() }
 
