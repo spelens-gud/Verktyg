@@ -12,7 +12,7 @@ import (
 	"git.bestfulfill.tech/devops/go-core/kits/kserver/metrics"
 )
 
-func RunGovernServer() {
+func RunGovernServer(ports ...string) {
 	// 环境变量判断开启端口
 	eg := gin.New()
 
@@ -29,7 +29,10 @@ func RunGovernServer() {
 		gin.SetMode(gin.ReleaseMode)
 	}
 
-	port := kgo.InitStrings(os.Getenv(iconfig.EnvKeyGovernServerPort), ":7799")
+	// 端口
+	ports = append(ports, os.Getenv(iconfig.EnvKeyGovernServerPort), ":7799")
+
+	port := kgo.InitStrings(ports...)
 	go func() {
 		if err := eg.Run(port); err != nil {
 			panic(err)
