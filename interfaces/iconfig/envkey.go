@@ -51,11 +51,10 @@ const (
 	// Deprecated: 日志输出不使用全局锁 使用 LOG_DISABLE_FILE_MUTEX
 	// EnvKeyServerDisableLogMutex     = "SERVER_DISABLE_LOG_MUTEX"
 
-	EnvKeyServerCloseWaitSecondsOld = "CLOSE_WAIT"           // Deprecated:服务关闭等待旧版
-	EnvKeyGovernServerEnable        = "GOVERN_SERVER_ENABLE" // 开启扩展服务 默认关闭
+	EnvKeyServerCloseWaitSecondsOld = "CLOSE_WAIT" // Deprecated:服务关闭等待旧版
 	EnvKeyGovernServerPort          = "GOVERN_SERVER_PORT"
 
-	EnvKeyRuntimePprofEnable            = "RUNTIME_PPROF_ENABLE"       // 开启启用pprof 默认关闭
+	EnvKeyRuntimePprofDisable           = "RUNTIME_PPROF_DISABLE"      // 开启启用pprof 默认关闭
 	EnvKeyRuntimePprofPrefix            = "RUNTIME_PPROF_PREFIX"       // pprof访问路径前缀 默认 /debug/pprof
 	EnvKeyRuntimePprofSecretKey         = "RUNTIME_PPROF_SECRET_KEY"   // pprof访问密钥 默认 空
 	EnvKeyRuntimeMetricsEnable          = "RUNTIME_METRICS_ENABLE"     // Deprecated: 开启启用metrics直接访问路径 废弃 metrics访问路径不为空即暴露
