@@ -43,7 +43,7 @@ func RegisterMetricsExport(router gin.IRouter, opts ...func(option *Option)) {
 	}
 
 	if len(opt.MetricsExportPath) == 0 {
-		return
+		opt.MetricsExportPath = "/metrics"
 	}
 
 	router = router.Group(opt.MetricsExportPath)
