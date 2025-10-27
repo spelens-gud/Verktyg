@@ -20,15 +20,14 @@ func NewGinEngine() *gin.Engine {
 		gin_middles.HealthCheck(e)
 		// metrics
 		metrics.RegisterMetricsExport(e)
+		// pprof(使用环境变量控制pprof的启用与否，而非环境标识)
+		httpprof.PProf(e)
 	}
 
 	// 生产模式
 	if iconfig.GetEnv().IsProduction() {
 		gin.SetMode(gin.ReleaseMode)
 	}
-
-	// pprof(使用环境变量控制pprof的启用与否，而非环境标识)
-	httpprof.PProf(e)
 
 	return e
 }

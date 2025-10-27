@@ -13,7 +13,7 @@ import (
 )
 
 func PProf(group gin.IRouter) {
-	if envflag.IsEmpty(iconfig.EnvKeyRuntimePprofEnable) {
+	if envflag.IsNotEmpty(iconfig.EnvKeyRuntimePprofDisable) {
 		return
 	}
 
