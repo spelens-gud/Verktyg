@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	DefaultSqlMetrics       = promdb.InitDBUsageMetrics("mysql", imetrics.NamespaceSql)
+	DefaultSqlMetrics       = promdb.InitDBUsageMetrics("sql", imetrics.NamespaceSql)
 	DefaultRedisMetrics     = promdb.InitDBUsageMetrics("redis", imetrics.NamespaceRedis)
 	DefaultKafkaMetrics     = prommq.InitMQUsageMetrics("kafka")
 	DefaultAmqpMetrics      = prommq.InitMQUsageMetrics("amqp")

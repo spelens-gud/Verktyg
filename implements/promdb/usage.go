@@ -29,8 +29,7 @@ func InitDBUsageMetrics(dbType, namespace string) imetrics.DBMetrics {
 	return m
 }
 
-func (m *dbUsageMetrics) Metrics(name, addr, _ string, err error, duration time.Duration) {
-	command := ""
+func (m *dbUsageMetrics) Metrics(name, addr, command string, err error, duration time.Duration) {
 	errMsg := ""
 
 	if err != nil {
