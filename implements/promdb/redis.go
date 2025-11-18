@@ -1,8 +1,8 @@
 package promdb
 
 import (
-	"github.com/go-redis/redis/v8"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/redis/go-redis/v9"
 
 	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
 )

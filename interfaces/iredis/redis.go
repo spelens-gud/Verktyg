@@ -3,11 +3,10 @@ package iredis
 import (
 	"context"
 	"crypto/tls"
+	"github.com/redis/go-redis/v9"
 	"net"
 	"runtime"
 	"time"
-
-	"github.com/go-redis/redis/v8"
 
 	"git.bestfulfill.tech/devops/go-core/kits/knet"
 )
@@ -15,7 +14,7 @@ import (
 type (
 	Redis interface {
 		Raw() redis.UniversalClient
-		GetRedis(ctx context.Context) redis.Cmdable
+		GetRedis() redis.Cmdable
 		Close() error
 	}
 

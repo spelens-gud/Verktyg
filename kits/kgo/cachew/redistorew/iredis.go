@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 
 	"git.bestfulfill.tech/devops/go-core/interfaces/iredis"
 	"git.bestfulfill.tech/devops/go-core/kits/kgo/cachew"

@@ -1,7 +1,7 @@
 package redisx
 
 import (
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 
 	"git.bestfulfill.tech/devops/go-core/interfaces/iredis"
 )
