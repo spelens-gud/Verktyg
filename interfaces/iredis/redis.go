@@ -3,10 +3,11 @@ package iredis
 import (
 	"context"
 	"crypto/tls"
-	"github.com/redis/go-redis/v9"
 	"net"
 	"runtime"
 	"time"
+
+	"github.com/redis/go-redis/v9"
 
 	"git.bestfulfill.tech/devops/go-core/kits/knet"
 )
@@ -113,7 +114,6 @@ func (config *RedisClusterConfig) Init(opts ...func(options *redis.ClusterOption
 		PoolTimeout:  time.Millisecond * time.Duration(config.DialTimeout),
 		PoolSize:     config.PoolSize,
 		MinIdleConns: config.MinIdleConns,
-		IdleTimeout:  time.Millisecond * time.Duration(config.IdleTimeout),
 	}
 
 	if config.InsecureSkipVerify {
@@ -145,7 +145,6 @@ func (config *RedisConfig) Init(opts ...func(options *redis.Options)) *redis.Opt
 		PoolTimeout:  time.Millisecond * time.Duration(config.DialTimeout),
 		PoolSize:     config.PoolSize,
 		MinIdleConns: config.MinIdleConns,
-		IdleTimeout:  time.Millisecond * time.Duration(config.IdleTimeout),
 	}
 
 	if config.InsecureSkipVerify {
