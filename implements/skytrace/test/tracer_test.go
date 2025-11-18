@@ -61,7 +61,7 @@ func BenchmarkSpan(b *testing.B) {
 
 	e.Any("", func(c *gin.Context) {
 		sp, ctx := tr.StartSpan(c.Request.Context(), "in")
-		rd.GetRedis(context.Background()).Get(ctx, "key")
+		rd.GetRedis().Get(ctx, "key")
 		defer sp.Finish()
 	})
 	_ = e.Run(":80")

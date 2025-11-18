@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	"github.com/opentracing/opentracing-go/ext"
+	"github.com/redis/go-redis/v9"
 	"go.uber.org/multierr"
 
 	"git.bestfulfill.tech/devops/go-core/implements/promdb"
@@ -37,6 +37,49 @@ type (
 	}
 )
 
+// DialHook method 实现 redis.Hook 接口的 DialHook 方法
+func (t *interceptor) DialHook(next redis.DialHook) redis.DialHook {
+	return next
+}
+
+// ProcessHook method 实现 redis.Hook 接口的 ProcessHook 方法
+func (t *interceptor) ProcessHook(next redis.ProcessHook) redis.ProcessHook {
+	return func(ctx context.Context, cmd redis.Cmder) error {
+		// Before 逻辑
+		ctx, err := t.BeforeProcess(ctx, cmd)
+		if err != nil {
+			return err
+		}
+
+		// 执行实际命令
+		err = next(ctx, cmd)
+
+		// After 逻辑
+		_ = t.AfterProcess(ctx, cmd)
+
+		return err
+	}
+}
+
+// ProcessPipelineHook method 实现 redis.Hook 接口的 ProcessPipelineHook 方法
+func (t *interceptor) ProcessPipelineHook(next redis.ProcessPipelineHook) redis.ProcessPipelineHook {
+	return func(ctx context.Context, cmds []redis.Cmder) error {
+		// Before 逻辑
+		ctx, err := t.BeforeProcessPipeline(ctx, cmds)
+		if err != nil {
+			return err
+		}
+
+		// 执行实际命令
+		err = next(ctx, cmds)
+
+		// After 逻辑
+		_ = t.AfterProcessPipeline(ctx, cmds)
+
+		return err
+	}
+}
+
 const (
 	contextKeyGoRedis incontext.Key = "go-redis.hook"
 )
@@ -44,6 +87,10 @@ const (
 type client interface {
 	promdb.RedisStatsGetter
 	redis.UniversalClient
+}
+
+func RegisterHookMetrics(cli client, traceAddr string, metricsName string, db int) {
+	registerHookMetrics(cli, traceAddr, metricsName, db)
 }
 
 func registerHookMetrics(cli client, traceAddr string, metricsName string, db int) {

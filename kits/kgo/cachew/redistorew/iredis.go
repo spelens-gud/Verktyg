@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 
 	"git.bestfulfill.tech/devops/go-core/interfaces/iredis"
 	"git.bestfulfill.tech/devops/go-core/kits/kgo/cachew"
@@ -15,15 +15,15 @@ type redisW struct {
 }
 
 func (r redisW) Delete(ctx context.Context, key string) (err error) {
-	return r.Redis.GetRedis(ctx).Del(ctx, key).Err()
+	return r.Redis.GetRedis().Del(ctx, key).Err()
 }
 
 func (r redisW) Get(ctx context.Context, key string) ([]byte, error) {
-	return r.Redis.GetRedis(ctx).Get(ctx, key).Bytes()
+	return r.Redis.GetRedis().Get(ctx, key).Bytes()
 }
 
 func (r redisW) Set(ctx context.Context, key string, data []byte, exp time.Duration) error {
-	return r.Redis.GetRedis(ctx).Set(ctx, key, data, exp).Err()
+	return r.Redis.GetRedis().Set(ctx, key, data, exp).Err()
 }
 
 func (r redisW) KeyNotFound(err error) bool {
