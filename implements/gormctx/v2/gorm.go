@@ -4,11 +4,11 @@ import (
 	"context"
 	"database/sql"
 
-	"gorm.io/driver/mysql"
-	"gorm.io/gorm"
-
 	"git.bestfulfill.tech/devops/go-core/implements/sqlcx"
 	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
+	"gorm.io/driver/mysql"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
 )
 
 var _ isql.Gorm2SQL = &gorm2Sql{}
@@ -46,8 +46,7 @@ func (g *gorm2Sql) Close() error {
 }
 
 func InitGormV2Sql(config isql.SQLConfig, gormOpts ...func(*gorm.Config)) (sql isql.Gorm2SQL, err error) {
-	sqlType := "mysql"
-	db, err := sqlcx.InitSqlDbConn(&config, sqlcx.GetDriver(sqlType))
+	db, err := sqlcx.InitSqlDbConn(&config, sqlcx.GetDriver(config.Type))
 	if err != nil {
 		return
 	}
@@ -59,11 +58,16 @@ func InitGormV2Sql(config isql.SQLConfig, gormOpts ...func(*gorm.Config)) (sql i
 		o(gormCfg)
 	}
 
-	gormDB, err := gorm.Open(mysql.New(mysql.Config{
-		Conn: db,
-	}), gormCfg)
-	if err != nil {
-		return
+	var gormDB *gorm.DB
+	if config.Type == "postgres" {
+		gormDB, err = gorm.Open(postgres.New(postgres.Config{
+			Conn: db,
+		}), gormCfg)
+	} else if config.Type == "mysql" {
+		// 默认使用MySQL驱动
+		gormDB, err = gorm.Open(mysql.New(mysql.Config{
+			Conn: db,
+		}), gormCfg)
 	}
 
 	sql = &gorm2Sql{DB: gormDB, conn: db}

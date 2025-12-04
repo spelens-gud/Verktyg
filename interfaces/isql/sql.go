@@ -98,6 +98,8 @@ type (
 	}
 
 	SQLConfig struct {
+		Type              string `json:"type"`
+		SSLMode           string `json:"ssl_mode"`
 		Host              string `json:"host"`
 		Port              int    `json:"port"`
 		DB                string `json:"db"`
@@ -181,6 +183,11 @@ func (cfg SQLConfig) ConnectionUrl() string {
 
 	if len(cfg.ExtraParams) > 0 {
 		conStr += "&" + strings.TrimPrefix(cfg.ExtraParams, "&")
+	}
+
+	if cfg.Type == "postgres" {
+		return fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=%s",
+			cfg.Host, cfg.Port, cfg.User, cfg.Password, cfg.DB, cfg.SSLMode)
 	}
 	return conStr
 }

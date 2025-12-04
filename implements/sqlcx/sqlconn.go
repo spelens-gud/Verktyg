@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/go-sql-driver/mysql"
+	"github.com/lib/pq"
 	"github.com/ngrok/sqlmw"
 
 	"git.bestfulfill.tech/devops/go-core/implements/promdb"
@@ -21,6 +22,8 @@ func GetDriver(name string) (d driver.Driver) {
 	switch name {
 	case "mysql":
 		return &mysql.MySQLDriver{}
+	case "postgres":
+		return &pq.Driver{}
 	}
 	return &mysql.MySQLDriver{}
 }
