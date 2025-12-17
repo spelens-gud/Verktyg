@@ -11,14 +11,14 @@ import (
 	"github.com/opentracing/opentracing-go/ext"
 	"go.uber.org/multierr"
 
-	"git.bestfulfill.tech/devops/go-core/implements/promdb"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/internal/incontext"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/envflag"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg.git/implements/promdb"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/internal/incontext"
+	"github.com/spelens-gud/Verktyg.git/kits/kdb"
+	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
 )
 
 var _ redis.Hook = &interceptor{}

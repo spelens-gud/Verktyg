@@ -9,10 +9,10 @@ import (
 	"github.com/SkyAPM/go2sky/propagation"
 	"github.com/SkyAPM/go2sky/reporter"
 
-	"git.bestfulfill.tech/devops/go-core/implements/skytrace/samplereport"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/implements/skytrace/samplereport"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 var (

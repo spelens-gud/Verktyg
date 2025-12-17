@@ -10,11 +10,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"golang.org/x/sync/errgroup"
 
-	"git.bestfulfill.tech/devops/go-core/implements/httpreq"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/gin_middles"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/metrics"
+	"github.com/spelens-gud/Verktyg.git/implements/httpreq"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/gin_middles"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/metrics"
 )
 
 func init() {

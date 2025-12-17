@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kserver"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver"
 )
 
 func TestGraceful(t *testing.T) {

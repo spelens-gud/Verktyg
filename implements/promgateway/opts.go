@@ -1,7 +1,7 @@
 package promgateway
 
 import (
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
 )
 
 func WithIntervalSeconds(s int) Options {

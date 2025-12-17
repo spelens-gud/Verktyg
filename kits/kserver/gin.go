@@ -3,12 +3,12 @@ package kserver
 import (
 	"github.com/gin-gonic/gin"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/httpprof"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/httpprof"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/metrics"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/metrics"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/gin_middles"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/gin_middles"
 )
 
 func NewGinEngine() *gin.Engine {

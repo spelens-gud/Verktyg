@@ -6,8 +6,8 @@ import (
 
 	"github.com/robfig/cron/v3"
 
-	"git.bestfulfill.tech/devops/go-core/implements/worker"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/implements/worker"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 func main() {

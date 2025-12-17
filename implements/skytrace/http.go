@@ -6,7 +6,7 @@ import (
 
 	v3 "github.com/SkyAPM/go2sky/reporter/grpc/language-agent"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
 )
 
 func (t Tracer) ExtractHttp(req *http.Request, extReqIDKeys ...string) (span itrace.Span, nCtx context.Context) {

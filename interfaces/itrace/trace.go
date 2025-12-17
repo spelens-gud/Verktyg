@@ -8,7 +8,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"git.bestfulfill.tech/devops/go-core/internal/incontext"
+	"github.com/spelens-gud/Verktyg.git/internal/incontext"
 )
 
 func NewIDFunc() string {

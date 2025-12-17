@@ -5,10 +5,10 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"git.bestfulfill.tech/devops/go-core/implements/sqlcx"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg.git/implements/sqlcx"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
+	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
 )
 
 // 实例化原始gorm.DB

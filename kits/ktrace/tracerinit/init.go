@@ -8,13 +8,13 @@ import (
 
 	jaegerConfig "github.com/uber/jaeger-client-go/config"
 
-	"git.bestfulfill.tech/devops/go-core/implements/otrace"
+	"github.com/spelens-gud/Verktyg.git/implements/otrace"
 
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 var typeMapping = map[reflect.Type]reflect.Type{

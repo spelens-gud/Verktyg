@@ -7,7 +7,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"go.uber.org/multierr"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
+	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
 )
 
 type GormContextTx interface {

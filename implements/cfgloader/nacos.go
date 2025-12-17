@@ -5,10 +5,10 @@ import (
 	"errors"
 	"os"
 
-	"git.bestfulfill.tech/devops/go-core/implements/cfgloader/sdk_nacos"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/implements/cfgloader/sdk_nacos"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 var _ iconfig.ConfigLoader = &nacos{}

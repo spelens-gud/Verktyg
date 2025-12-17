@@ -5,7 +5,7 @@ import (
 
 	"github.com/robfig/cron/v3"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iworker"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iworker"
 )
 
 var _ iworker.Worker = &worker{}

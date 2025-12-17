@@ -5,12 +5,12 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 
 	cluster "github.com/bsm/sarama-cluster"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ikafka"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg.git/kits/kdb"
 )
 
 type clusterConsumer struct {

@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
 )
 
 func Always(ctx context.Context, eg *errgroup.Group, f func(ctx context.Context), opts ...Option) {

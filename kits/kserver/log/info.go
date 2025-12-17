@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
 )
 
 var pool = &sync.Pool{

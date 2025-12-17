@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo/buffpool"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo/buffpool"
 )
 
 var _ ihttp.RawClient = &RawClient{}

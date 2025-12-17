@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/bufferedwriter"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
-	"git.bestfulfill.tech/devops/go-core/kits/kruntime"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/graceful"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/bufferedwriter"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/kits/kruntime"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/graceful"
 )
 
 const defaultCloseWaitSeconds = 10

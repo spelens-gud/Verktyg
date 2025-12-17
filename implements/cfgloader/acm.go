@@ -3,9 +3,9 @@ package cfgloader
 import (
 	"context"
 
-	"git.bestfulfill.tech/devops/go-core/implements/cfgloader/sdk_acm"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/implements/cfgloader/sdk_acm"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 var _ iconfig.ConfigLoader = &acm{}

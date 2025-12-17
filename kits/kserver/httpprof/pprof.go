@@ -6,10 +6,10 @@ import (
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/envflag"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 func PProf(group gin.IRouter) {

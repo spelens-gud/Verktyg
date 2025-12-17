@@ -5,7 +5,7 @@ import (
 	"os/signal"
 	"sync"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 var (

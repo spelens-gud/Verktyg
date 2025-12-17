@@ -9,7 +9,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
+	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
 )
 
 type sqlDb interface {

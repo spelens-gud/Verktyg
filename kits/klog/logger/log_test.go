@@ -7,10 +7,10 @@ import (
 	"os"
 	"testing"
 
-	"git.bestfulfill.tech/devops/go-core/implements/zaplog"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/implements/zaplog"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 var ctx = context.Background()

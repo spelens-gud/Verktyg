@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/sync/singleflight"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 const logTag = "CACHE_W"

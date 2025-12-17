@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/implements/redisx"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iredis"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo/cachew"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo/cachew/redistorew"
+	"github.com/spelens-gud/Verktyg.git/implements/redisx"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iredis"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo/cachew"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo/cachew/redistorew"
 )
 
 type ret struct {

@@ -6,9 +6,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
+	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
 )
 
 var defaultHeaderRequestIDKeys = []string{itrace.HeaderXRequestID, "Request-Id", itrace.HeaderXTraceID}

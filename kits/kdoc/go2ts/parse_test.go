@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kdoc/go2ts/testdata"
+	"github.com/spelens-gud/Verktyg.git/kits/kdoc/go2ts/testdata"
 )
 
 func TestParse(t *testing.T) {

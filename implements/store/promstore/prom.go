@@ -3,7 +3,7 @@ package promstore
 import (
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/istore"
+	"github.com/spelens-gud/Verktyg.git/interfaces/istore"
 )
 
 type PromStore struct {

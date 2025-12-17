@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/kits/knet"
+	"github.com/spelens-gud/Verktyg.git/kits/knet"
 )
 
 type (

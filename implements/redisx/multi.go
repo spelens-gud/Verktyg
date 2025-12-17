@@ -3,7 +3,7 @@ package redisx
 import (
 	"github.com/go-redis/redis/v8"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iredis"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iredis"
 )
 
 // DEPRECATED: 不要再用这种写法 请使用类型别名

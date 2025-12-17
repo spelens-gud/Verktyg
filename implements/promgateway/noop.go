@@ -1,6 +1,6 @@
 package promgateway
 
-import "git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
+import "github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
 
 var _ imetrics.GatewayDaemon = NoopDaemon{}
 

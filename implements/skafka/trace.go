@@ -6,8 +6,8 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
 )
 
 func startProducerTrace(ctx context.Context, address, topic, typ string) (sp itrace.Span, header []sarama.RecordHeader) {

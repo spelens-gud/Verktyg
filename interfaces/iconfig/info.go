@@ -10,7 +10,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kgo"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo"
 )
 
 var (

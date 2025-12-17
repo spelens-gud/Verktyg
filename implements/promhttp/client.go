@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
 )
 
 type ClitMetrics struct {

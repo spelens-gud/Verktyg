@@ -11,11 +11,11 @@ import (
 	"github.com/uber/jaeger-client-go"
 	jaegerConfig "github.com/uber/jaeger-client-go/config"
 
-	"git.bestfulfill.tech/devops/go-core/implements/otrace"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/gin_middles"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/metrics"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg.git/implements/otrace"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/gin_middles"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/metrics"
+	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
 )
 
 var (

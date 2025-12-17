@@ -5,12 +5,12 @@ import (
 	"os"
 	"strconv"
 
-	"git.bestfulfill.tech/devops/go-core/implements/promhttp"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/envflag"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/graceful"
+	"github.com/spelens-gud/Verktyg.git/implements/promhttp"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo"
+	"github.com/spelens-gud/Verktyg.git/kits/kserver/graceful"
 )
 
 type Config struct {

@@ -4,9 +4,9 @@ import (
 	"context"
 	"io"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
-	"git.bestfulfill.tech/devops/go-core/internal/incontext"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger/internal"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg.git/internal/incontext"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger/internal"
 )
 
 const (

@@ -9,8 +9,8 @@ import (
 	"text/template"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/idoc"
-	"git.bestfulfill.tech/devops/go-core/kits/kdoc"
+	"github.com/spelens-gud/Verktyg.git/interfaces/idoc"
+	"github.com/spelens-gud/Verktyg.git/kits/kdoc"
 )
 
 const DefaultTsTemplate = `

@@ -10,7 +10,7 @@ import (
 	v3 "github.com/SkyAPM/go2sky/reporter/grpc/language-agent"
 	"github.com/opentracing/opentracing-go/ext"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
 )
 
 type Span struct {

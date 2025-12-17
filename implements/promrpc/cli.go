@@ -3,7 +3,7 @@ package promrpc
 import (
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
 )
 
 type ClitMetrics struct {

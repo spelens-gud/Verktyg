@@ -4,15 +4,15 @@ import (
 	"context"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
 
 	cluster "github.com/bsm/sarama-cluster"
 
 	"github.com/Shopify/sarama"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/kits/kdb"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 func doConsume(ctx context.Context, address, typ string, msg *sarama.ConsumerMessage, do func(ctx context.Context) error) {

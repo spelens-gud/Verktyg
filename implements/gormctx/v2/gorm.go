@@ -7,8 +7,8 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
-	"git.bestfulfill.tech/devops/go-core/implements/sqlcx"
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
+	"github.com/spelens-gud/Verktyg.git/implements/sqlcx"
+	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
 )
 
 var _ isql.Gorm2SQL = &gorm2Sql{}

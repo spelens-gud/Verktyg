@@ -5,7 +5,7 @@ import (
 
 	"github.com/SkyAPM/go2sky/reporter"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
 )
 
 type GRPCReportTracerConfig struct {

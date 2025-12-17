@@ -1,6 +1,6 @@
 package internal
 
-import "git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+import "github.com/spelens-gud/Verktyg.git/interfaces/ilog"
 
 type levelLog ilog.Level
 

@@ -13,9 +13,9 @@ import (
 	"github.com/jinzhu/gorm"
 	"gotest.tools/assert"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
+	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
 )
 
 func testInit() (g isql.GormSQL, cf func(), err error) {

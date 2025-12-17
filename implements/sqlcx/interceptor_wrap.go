@@ -5,7 +5,7 @@ import (
 	"database/sql/driver"
 	"strconv"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
 )
 
 type wRows struct {

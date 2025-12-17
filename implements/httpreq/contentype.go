@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo/buffpool"
-	"git.bestfulfill.tech/devops/go-core/kits/kurl"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo/buffpool"
+	"github.com/spelens-gud/Verktyg.git/kits/kurl"
 )
 
 var _ ihttp.Client = &ContentTypeClient{}

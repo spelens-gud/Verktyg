@@ -8,7 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
 )
 
 var (

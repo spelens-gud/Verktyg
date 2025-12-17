@@ -1,7 +1,7 @@
 package httpreq
 
 import (
-	"git.bestfulfill.tech/devops/go-core/internal/incontext"
+	"github.com/spelens-gud/Verktyg.git/internal/incontext"
 )
 
 const (

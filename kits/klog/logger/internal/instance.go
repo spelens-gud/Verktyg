@@ -6,7 +6,7 @@ import (
 	"io"
 	"sync"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
 )
 
 type instance struct {

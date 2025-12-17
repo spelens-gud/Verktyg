@@ -3,8 +3,8 @@ package internal
 import (
 	"context"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
-	"git.bestfulfill.tech/devops/go-core/internal/incontext"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg.git/internal/incontext"
 )
 
 const keyExtContextPatch = incontext.Key("logger.ext_context_patch")

@@ -3,7 +3,7 @@ package kdoc
 import (
 	"testing"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kdoc/testdata"
+	"github.com/spelens-gud/Verktyg.git/kits/kdoc/testdata"
 )
 
 func TestGetStructFieldsDoc(t *testing.T) {

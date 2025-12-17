@@ -3,7 +3,7 @@ package log
 import (
 	jsoniter "github.com/json-iterator/go"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
 )
 
 const logTag = "HTTP_SERVER"

@@ -10,7 +10,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"git.bestfulfill.tech/devops/go-core/implements/zaplog"
+	"github.com/spelens-gud/Verktyg.git/implements/zaplog"
 )
 
 var output io.Writer

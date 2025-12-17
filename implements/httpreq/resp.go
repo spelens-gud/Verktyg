@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo/buffpool"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo"
+	"github.com/spelens-gud/Verktyg.git/kits/kgo/buffpool"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 func NewResp(response *http.Response) (res ihttp.Resp, err error) {

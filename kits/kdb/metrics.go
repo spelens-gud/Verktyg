@@ -3,9 +3,9 @@ package kdb
 import (
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/implements/promdb"
-	"git.bestfulfill.tech/devops/go-core/implements/prommq"
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg.git/implements/promdb"
+	"github.com/spelens-gud/Verktyg.git/implements/prommq"
+	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
 )
 
 var (

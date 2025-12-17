@@ -1,4 +1,4 @@
-module git.bestfulfill.tech/devops/go-core
+module github.com/spelens-gud/Verktyg.git
 
 go 1.23
 

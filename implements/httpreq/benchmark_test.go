@@ -5,14 +5,14 @@ import (
 	"strings"
 	"testing"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ierror"
 
 	"github.com/eapache/go-resiliency/breaker"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg.git/kits/kerror/errorx"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
 )
 
 var handlerFunc = func() {

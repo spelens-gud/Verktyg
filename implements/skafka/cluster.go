@@ -4,7 +4,7 @@ import (
 	cluster "github.com/bsm/sarama-cluster"
 	"github.com/pkg/errors"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
 )
 
 type clusterClient struct {
