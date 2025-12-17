@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/spelens-gud/Verktyg.git/implements/httpreq"
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/httpreq"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var (

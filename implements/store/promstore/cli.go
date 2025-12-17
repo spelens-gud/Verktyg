@@ -3,7 +3,7 @@ package promstore
 import (
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
 )
 
 type storeMetrics struct {

@@ -3,7 +3,7 @@ package gin_middles
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
 )
 
 func ExtractMetadata() gin.HandlerFunc {

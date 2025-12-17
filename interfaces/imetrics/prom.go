@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 	prom "github.com/prometheus/client_golang/prometheus"
 
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type (

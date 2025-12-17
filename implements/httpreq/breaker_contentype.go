@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
 )
 
 var _ ihttp.Client = &BreakerContentTypeClient{}

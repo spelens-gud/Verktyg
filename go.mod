@@ -1,4 +1,4 @@
-module github.com/spelens-gud/Verktyg.git
+module github.com/spelens-gud/Verktyg
 
 go 1.23
 

@@ -8,7 +8,7 @@ import (
 
 	"github.com/Just-maple/structgraph"
 
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func GenStructGraph(in interface{}, filename string, opts ...structgraph.Option) {

@@ -7,8 +7,8 @@ import (
 
 	"github.com/theothertomelliott/acyclic"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itest"
-	"github.com/spelens-gud/Verktyg.git/kits/kdoc/go2ts"
+	"github.com/spelens-gud/Verktyg/interfaces/itest"
+	"github.com/spelens-gud/Verktyg/kits/kdoc/go2ts"
 )
 
 func ParseTestSample2YapiData(st *itest.Sample) (data ApiUploadData) {

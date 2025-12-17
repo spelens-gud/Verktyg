@@ -7,15 +7,15 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/spelens-gud/Verktyg.git/internal/incontext"
+	"github.com/spelens-gud/Verktyg/internal/incontext"
 
 	"github.com/Shopify/sarama"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/kits/kdb"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
-	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 )
 
 type (

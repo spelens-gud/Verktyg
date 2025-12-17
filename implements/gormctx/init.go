@@ -5,10 +5,10 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"github.com/spelens-gud/Verktyg.git/implements/sqlcx"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
-	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg/implements/sqlcx"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/kits/kenv/envflag"
 )
 
 // 实例化原始gorm.DB

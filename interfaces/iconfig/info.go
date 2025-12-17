@@ -10,7 +10,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/spelens-gud/Verktyg.git/kits/kgo"
+	"github.com/spelens-gud/Verktyg/kits/kgo"
 )
 
 var (

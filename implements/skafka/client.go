@@ -6,7 +6,7 @@ import (
 	"github.com/Shopify/sarama"
 	"github.com/pkg/errors"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
 )
 
 type client struct {

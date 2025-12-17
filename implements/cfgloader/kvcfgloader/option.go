@@ -7,7 +7,7 @@ import (
 
 	"github.com/patrickmn/go-cache"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
 )
 
 type acmKVOption struct {

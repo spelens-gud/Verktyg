@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo/buffpool"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/kgo"
+	"github.com/spelens-gud/Verktyg/kits/kgo/buffpool"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func NewResp(response *http.Response) (res ihttp.Resp, err error) {

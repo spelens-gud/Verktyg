@@ -1,7 +1,7 @@
 package httpreq
 
 import (
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
 )
 
 var _ ihttp.Client = &BreakerJsonClient{}

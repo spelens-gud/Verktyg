@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/kits/knet"
+	"github.com/spelens-gud/Verktyg/kits/knet"
 )
 
 type (

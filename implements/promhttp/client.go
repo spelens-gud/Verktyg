@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
-	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/kits/kenv/envflag"
 )
 
 type ClitMetrics struct {

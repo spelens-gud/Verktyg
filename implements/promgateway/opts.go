@@ -1,7 +1,7 @@
 package promgateway
 
 import (
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
 )
 
 func WithIntervalSeconds(s int) Options {

@@ -10,8 +10,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
-	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
 )
 
 type serverMetrics struct {

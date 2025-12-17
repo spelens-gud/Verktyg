@@ -5,7 +5,7 @@ import (
 	"os/signal"
 	"sync"
 
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var (

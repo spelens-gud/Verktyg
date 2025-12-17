@@ -6,10 +6,10 @@ import (
 
 	jaegerConfig "github.com/uber/jaeger-client-go/config"
 
-	"github.com/spelens-gud/Verktyg.git/implements/otrace"
+	"github.com/spelens-gud/Verktyg/implements/otrace"
 
-	"github.com/spelens-gud/Verktyg.git/implements/skytrace"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/implements/skytrace"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
 )
 
 func TestInit(t *testing.T) {

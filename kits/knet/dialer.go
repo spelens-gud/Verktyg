@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type DialFunc func(ctx context.Context, network, addr string) (net.Conn, error)

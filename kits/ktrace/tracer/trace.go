@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/internal/incontext"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/internal/incontext"
 )
 
 var defaultTracer = itrace.NoopTracer

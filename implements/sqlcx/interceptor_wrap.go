@@ -5,7 +5,7 @@ import (
 	"database/sql/driver"
 	"strconv"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 type wRows struct {

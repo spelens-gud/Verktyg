@@ -6,9 +6,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
-	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 )
 
 var defaultHeaderRequestIDKeys = []string{itrace.HeaderXRequestID, "Request-Id", itrace.HeaderXTraceID}

@@ -13,9 +13,9 @@ import (
 	sentinellog "github.com/alibaba/sentinel-golang/logging"
 	"github.com/gin-gonic/gin"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var (

@@ -6,8 +6,8 @@ import (
 
 	"github.com/robfig/cron/v3"
 
-	"github.com/spelens-gud/Verktyg.git/implements/worker"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/worker"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func main() {

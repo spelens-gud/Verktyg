@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/implements/cfgloader/sdk_acm"
+	"github.com/spelens-gud/Verktyg/implements/cfgloader/sdk_acm"
 )
 
 func init() {

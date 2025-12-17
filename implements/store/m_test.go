@@ -3,7 +3,7 @@ package store
 import (
 	"testing"
 
-	"github.com/spelens-gud/Verktyg.git/implements/store/memcached"
+	"github.com/spelens-gud/Verktyg/implements/store/memcached"
 )
 
 func TestMemcache(t *testing.T) {

@@ -6,10 +6,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/spelens-gud/Verktyg.git/implements/promhttp"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/promhttp"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var (

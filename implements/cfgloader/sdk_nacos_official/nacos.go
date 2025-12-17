@@ -10,8 +10,8 @@ import (
 	"github.com/nacos-group/nacos-sdk-go/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/vo"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
-	"github.com/spelens-gud/Verktyg.git/kits/kjson"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/kjson"
 )
 
 type Client interface {

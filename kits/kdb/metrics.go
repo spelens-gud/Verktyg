@@ -3,9 +3,9 @@ package kdb
 import (
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/implements/promdb"
-	"github.com/spelens-gud/Verktyg.git/implements/prommq"
-	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/implements/promdb"
+	"github.com/spelens-gud/Verktyg/implements/prommq"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
 )
 
 var (

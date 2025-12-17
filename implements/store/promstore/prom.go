@@ -3,7 +3,7 @@ package promstore
 import (
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
 )
 
 type PromStore struct {

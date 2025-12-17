@@ -10,11 +10,11 @@ import (
 	"github.com/go-sql-driver/mysql"
 	"github.com/ngrok/sqlmw"
 
-	"github.com/spelens-gud/Verktyg.git/implements/promdb"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
-	"github.com/spelens-gud/Verktyg.git/kits/kdb"
-	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg/implements/promdb"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
+	"github.com/spelens-gud/Verktyg/kits/kenv/envflag"
 )
 
 func GetDriver(name string) (d driver.Driver) {

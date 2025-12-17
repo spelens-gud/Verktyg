@@ -9,7 +9,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type gormLogger struct {

@@ -3,8 +3,8 @@ package internal
 import (
 	"context"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
-	"github.com/spelens-gud/Verktyg.git/internal/incontext"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/internal/incontext"
 )
 
 const keyExtContextPatch = incontext.Key("logger.ext_context_patch")

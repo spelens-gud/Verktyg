@@ -7,8 +7,8 @@ import (
 	"github.com/Shopify/sarama"
 	"github.com/pkg/errors"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func (c *client) NewConsumerGroup(groupID string) (p ikafka.ConsumerGroup, err error) {

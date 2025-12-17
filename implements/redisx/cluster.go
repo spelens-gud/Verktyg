@@ -6,8 +6,8 @@ import (
 
 	"github.com/go-redis/redis/v8"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iredis"
-	"github.com/spelens-gud/Verktyg.git/kits/kdb"
+	"github.com/spelens-gud/Verktyg/interfaces/iredis"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
 )
 
 var _ iredis.Redis = &redisClusterClient{}

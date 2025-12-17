@@ -9,7 +9,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"go.uber.org/multierr"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
 )
 
 var (

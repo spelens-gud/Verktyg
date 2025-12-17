@@ -8,12 +8,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
-	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
-	"github.com/spelens-gud/Verktyg.git/kits/kerror/errorx"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo/buffpool"
-	"github.com/spelens-gud/Verktyg.git/version"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/kgo/buffpool"
+	"github.com/spelens-gud/Verktyg/version"
 )
 
 const (

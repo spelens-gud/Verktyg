@@ -1,7 +1,7 @@
 package iredis
 
 import (
-	"github.com/spelens-gud/Verktyg.git/kits/kstruct"
+	"github.com/spelens-gud/Verktyg/kits/kstruct"
 )
 
 type (

@@ -3,7 +3,7 @@ package imetrics
 import (
 	prom "github.com/prometheus/client_golang/prometheus"
 
-	"github.com/spelens-gud/Verktyg.git/version"
+	"github.com/spelens-gud/Verktyg/version"
 )
 
 var versionDesc = prom.NewDesc(

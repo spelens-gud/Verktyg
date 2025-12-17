@@ -5,7 +5,7 @@ import (
 
 	"github.com/SkyAPM/go2sky/reporter"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 type GRPCReportTracerConfig struct {

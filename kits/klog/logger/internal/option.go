@@ -3,7 +3,7 @@ package internal
 import (
 	"io"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 type (

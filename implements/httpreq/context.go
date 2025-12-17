@@ -1,7 +1,7 @@
 package httpreq
 
 import (
-	"github.com/spelens-gud/Verktyg.git/internal/incontext"
+	"github.com/spelens-gud/Verktyg/internal/incontext"
 )
 
 const (

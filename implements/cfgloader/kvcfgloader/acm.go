@@ -3,8 +3,8 @@ package kvcfgloader
 import (
 	"context"
 
-	"github.com/spelens-gud/Verktyg.git/implements/cfgloader/sdk_acm"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/implements/cfgloader/sdk_acm"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
 )
 
 // 应用KV配置

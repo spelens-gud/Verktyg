@@ -1,6 +1,6 @@
 package internal
 
-import "github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+import "github.com/spelens-gud/Verktyg/interfaces/ilog"
 
 type levelLog ilog.Level
 

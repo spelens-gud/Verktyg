@@ -8,9 +8,9 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"github.com/spelens-gud/Verktyg.git/implements/gormctx"
-	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/gormctx"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var sqlConfig = isql.SQLConfig{

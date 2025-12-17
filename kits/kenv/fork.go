@@ -6,7 +6,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func ForkAndInheritEnv(env []string) (pid int, err error) {

@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
 )
 
 var pool = &sync.Pool{

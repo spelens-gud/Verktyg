@@ -8,8 +8,8 @@ import (
 
 	"github.com/ngrok/sqlmw"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 type Interceptor struct {

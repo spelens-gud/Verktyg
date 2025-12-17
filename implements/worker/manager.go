@@ -9,17 +9,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/kits/kserver/govern_server"
+	"github.com/spelens-gud/Verktyg/kits/kserver/govern_server"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 
 	"github.com/robfig/cron/v3"
 
-	"github.com/spelens-gud/Verktyg.git/kits/kruntime"
+	"github.com/spelens-gud/Verktyg/kits/kruntime"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iworker"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/iworker"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type workerManager struct {

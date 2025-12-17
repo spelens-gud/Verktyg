@@ -3,7 +3,7 @@ package internal
 import (
 	"runtime"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 func init() {

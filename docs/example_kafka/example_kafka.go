@@ -6,9 +6,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/implements/skafka"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
-	"github.com/spelens-gud/Verktyg.git/kits/kruntime"
+	"github.com/spelens-gud/Verktyg/implements/skafka"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/kruntime"
 )
 
 type Order struct {

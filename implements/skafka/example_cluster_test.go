@@ -7,8 +7,8 @@ import (
 	"github.com/Shopify/sarama"
 	cluster "github.com/bsm/sarama-cluster"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var _ ikafka.ClusterConsumeHandler = &exampleClusterConsumeHandler{}

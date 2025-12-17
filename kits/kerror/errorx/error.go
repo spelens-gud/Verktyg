@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ierror"
-	"github.com/spelens-gud/Verktyg.git/kits/kerror/internal/errors"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/kits/kerror/internal/errors"
 )
 
 type Error struct {

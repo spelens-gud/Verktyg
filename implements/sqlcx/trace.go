@@ -9,11 +9,11 @@ import (
 
 	"github.com/opentracing/opentracing-go/ext"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/isql"
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/kits/kdb"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
-	"github.com/spelens-gud/Verktyg.git/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 )
 
 // trace 追踪

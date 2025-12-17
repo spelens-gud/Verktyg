@@ -7,10 +7,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/spelens-gud/Verktyg.git/implements/zaplog"
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/zaplog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var ctx = context.Background()

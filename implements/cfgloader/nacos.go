@@ -5,10 +5,10 @@ import (
 	"errors"
 	"os"
 
-	"github.com/spelens-gud/Verktyg.git/implements/cfgloader/sdk_nacos"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/cfgloader/sdk_nacos"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/kgo"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var _ iconfig.ConfigLoader = &nacos{}

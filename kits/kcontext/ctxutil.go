@@ -3,7 +3,7 @@ package kcontext
 import (
 	"context"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 type contentKey int

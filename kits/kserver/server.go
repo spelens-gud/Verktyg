@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/kits/klog/bufferedwriter"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
-	"github.com/spelens-gud/Verktyg.git/kits/kruntime"
-	"github.com/spelens-gud/Verktyg.git/kits/kserver/graceful"
+	"github.com/spelens-gud/Verktyg/kits/klog/bufferedwriter"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/kruntime"
+	"github.com/spelens-gud/Verktyg/kits/kserver/graceful"
 )
 
 const defaultCloseWaitSeconds = 10

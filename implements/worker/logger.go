@@ -4,7 +4,7 @@ import (
 	"github.com/robfig/cron/v3"
 	"github.com/spf13/cast"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 const logTagCronWorker = "CRON_WORKER"

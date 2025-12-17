@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/implements/redisx"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iredis"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo/cachew"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo/cachew/redistorew"
+	"github.com/spelens-gud/Verktyg/implements/redisx"
+	"github.com/spelens-gud/Verktyg/interfaces/iredis"
+	"github.com/spelens-gud/Verktyg/kits/kgo/cachew"
+	"github.com/spelens-gud/Verktyg/kits/kgo/cachew/redistorew"
 )
 
 type ret struct {

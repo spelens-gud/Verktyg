@@ -5,11 +5,11 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
 
 	"github.com/eapache/go-resiliency/breaker"
 
-	"github.com/spelens-gud/Verktyg.git/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
 )
 
 type BreakerOption struct {

@@ -3,7 +3,7 @@ package cfgloader
 import (
 	"context"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
 )
 
 var _ iconfig.ConfigLoader = multi{}

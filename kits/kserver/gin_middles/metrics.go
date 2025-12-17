@@ -3,8 +3,8 @@ package gin_middles
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/spelens-gud/Verktyg.git/implements/promhttp"
-	"github.com/spelens-gud/Verktyg.git/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/implements/promhttp"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
 )
 
 type MetricsOption struct {

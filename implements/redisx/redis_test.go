@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iredis"
+	"github.com/spelens-gud/Verktyg/interfaces/iredis"
 )
 
 func TestRedisCancel(t *testing.T) {

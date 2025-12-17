@@ -9,8 +9,8 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/idoc"
-	"github.com/spelens-gud/Verktyg.git/kits/kdoc"
+	"github.com/spelens-gud/Verktyg/interfaces/idoc"
+	"github.com/spelens-gud/Verktyg/kits/kdoc"
 )
 
 const DefaultTsTemplate = `

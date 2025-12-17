@@ -3,9 +3,9 @@ package cfgloader
 import (
 	"context"
 
-	"github.com/spelens-gud/Verktyg.git/implements/cfgloader/sdk_acm"
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/cfgloader/sdk_acm"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var _ iconfig.ConfigLoader = &acm{}

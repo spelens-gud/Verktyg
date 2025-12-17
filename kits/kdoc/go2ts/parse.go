@@ -1,7 +1,7 @@
 package go2ts
 
 import (
-	"github.com/spelens-gud/Verktyg.git/interfaces/idoc"
+	"github.com/spelens-gud/Verktyg/interfaces/idoc"
 )
 
 type Parser struct {

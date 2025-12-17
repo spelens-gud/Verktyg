@@ -9,7 +9,7 @@ import (
 
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
 )
 
 const defaultLogFileFormat = "%Y-%m-%d_%H.log"

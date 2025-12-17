@@ -5,11 +5,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo"
-	"github.com/spelens-gud/Verktyg.git/kits/kserver/gin_middles"
-	"github.com/spelens-gud/Verktyg.git/kits/kserver/httpprof"
-	"github.com/spelens-gud/Verktyg.git/kits/kserver/metrics"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/kgo"
+	"github.com/spelens-gud/Verktyg/kits/kserver/gin_middles"
+	"github.com/spelens-gud/Verktyg/kits/kserver/httpprof"
+	"github.com/spelens-gud/Verktyg/kits/kserver/metrics"
 )
 
 func RunGovernServer(ports ...string) {

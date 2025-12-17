@@ -7,8 +7,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/iconfig"
-	"github.com/spelens-gud/Verktyg.git/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/kenv/envflag"
 )
 
 const envGracefulReloadFlag = "GRACEFUL_RELOAD_FLAG"

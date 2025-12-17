@@ -4,15 +4,15 @@ import (
 	"context"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
 
 	cluster "github.com/bsm/sarama-cluster"
 
 	"github.com/Shopify/sarama"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
-	"github.com/spelens-gud/Verktyg.git/kits/kdb"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func doConsume(ctx context.Context, address, typ string, msg *sarama.ConsumerMessage, do func(ctx context.Context) error) {

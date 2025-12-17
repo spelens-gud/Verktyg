@@ -4,9 +4,9 @@ import (
 	"context"
 	"io"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ilog"
-	"github.com/spelens-gud/Verktyg.git/internal/incontext"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger/internal"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/internal/incontext"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger/internal"
 )
 
 const (

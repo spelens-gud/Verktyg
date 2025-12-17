@@ -13,10 +13,10 @@ import (
 	"path"
 	"time"
 
-	"github.com/spelens-gud/Verktyg.git/implements/httpreq"
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
-	"github.com/spelens-gud/Verktyg.git/interfaces/itest"
-	"github.com/spelens-gud/Verktyg.git/kits/kurl"
+	"github.com/spelens-gud/Verktyg/implements/httpreq"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/itest"
+	"github.com/spelens-gud/Verktyg/kits/kurl"
 )
 
 var (

@@ -3,7 +3,7 @@ package internal
 import (
 	"io"
 
-	"github.com/spelens-gud/Verktyg.git/kits/kgo"
+	"github.com/spelens-gud/Verktyg/kits/kgo"
 )
 
 type stdLoggerWriter struct{}

@@ -7,10 +7,10 @@ import (
 	svrlessgin "github.com/Just-maple/serverless-gin"
 	"github.com/gin-gonic/gin"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ierror"
-	"github.com/spelens-gud/Verktyg.git/kits/kcontext"
-	"github.com/spelens-gud/Verktyg.git/kits/kerror/errorx"
-	"github.com/spelens-gud/Verktyg.git/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type (

@@ -8,7 +8,7 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 var (

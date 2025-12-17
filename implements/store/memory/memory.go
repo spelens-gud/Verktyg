@@ -3,7 +3,7 @@ package memory
 import (
 	"sync"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
 )
 
 func init() {

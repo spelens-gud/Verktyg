@@ -3,7 +3,7 @@ package itest
 import (
 	"net/http"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
 )
 
 type (

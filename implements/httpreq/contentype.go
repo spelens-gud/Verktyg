@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/spelens-gud/Verktyg.git/interfaces/ihttp"
-	"github.com/spelens-gud/Verktyg.git/kits/kgo/buffpool"
-	"github.com/spelens-gud/Verktyg.git/kits/kurl"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/kgo/buffpool"
+	"github.com/spelens-gud/Verktyg/kits/kurl"
 )
 
 var _ ihttp.Client = &ContentTypeClient{}
