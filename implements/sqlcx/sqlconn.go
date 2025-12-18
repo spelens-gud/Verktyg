@@ -22,7 +22,6 @@ func GetDriver(name string) (d driver.Driver) {
 	switch name {
 	case "mysql":
 		return &mysql.MySQLDriver{}
-	}
 	case "postgres":
 		return &pq.Driver{}
 	}
