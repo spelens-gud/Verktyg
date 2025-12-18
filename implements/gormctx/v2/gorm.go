@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"git.bestfulfill.tech/devops/go-core/implements/sqlcx"
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/implements/sqlcx"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
