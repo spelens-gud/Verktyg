@@ -17,27 +17,27 @@ func Writer() io.Writer {
 	return internal.Writer()
 }
 
-// 设置日志级别 会重新初始化logger
+// SetLevel 设置日志级别 会重新初始化logger
 func SetLevel(level ilog.Level) {
 	internal.SetLevel(level)
 }
 
-// 设置日志输出writer 会重新初始化logger
+// SetOutput 设置日志输出writer 会重新初始化logger
 func SetOutput(writer io.Writer) {
 	internal.SetOutput(writer)
 }
 
-// 设置日志工厂方法 会重新初始化logger
+// SetProvider 设置日志工厂方法 会重新初始化logger
 func SetProvider(loggerFactory ilog.LoggerProvider) {
 	internal.SetProvider(loggerFactory)
 }
 
-// 注册固有字段 会重新初始化logger
+// RegisterConstPatch 注册固有字段 会重新初始化logger
 func RegisterConstPatch(p ...ilog.LoggerPatch) {
 	internal.RegisterInitPatch(p...)
 }
 
-// 注册全局上下文字段 每次执行FromContext时 按照Patch链更新Logger
+// RegisterGlobalContextPatch 注册全局上下文字段 每次执行FromContext时 按照Patch链更新Logger
 func RegisterGlobalContextPatch(p ...ilog.LoggerPatch) {
 	internal.RegisterContextPatch(p...)
 }
@@ -46,7 +46,7 @@ func RegisterWriterWrapper(w ...func(writer io.Writer) io.Writer) {
 	internal.RegisterWriterWrapper(w...)
 }
 
-// 注册上下文字段 每次执行FromContext时 按照Patch链更新Logger
+// WithContextPatch 注册上下文字段 每次执行FromContext时 按照Patch链更新Logger
 func WithContextPatch(ctx context.Context, p ...ilog.LoggerPatch) context.Context {
 	p = append(internal.ExtPatchFromContext(ctx), p...)
 	return internal.ExtPatchWithContext(ctx, p...)
