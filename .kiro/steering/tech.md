@@ -16,7 +16,7 @@
 - `github.com/go-sql-driver/mysql` - MySQL 驱动
 
 ### 缓存与存储
-- `github.com/go-redis/redis/v8` - Redis 客户端
+- `github.com/go-redis/redis/v9` - Redis 客户端
 - `github.com/bradfitz/gomemcache` - Memcached 客户端
 - `github.com/patrickmn/go-cache` - 内存缓存
 

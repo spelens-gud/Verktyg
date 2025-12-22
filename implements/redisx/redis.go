@@ -5,8 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/go-redis/redis/v8"
-
+	"github.com/redis/go-redis/v9"
 	"github.com/spelens-gud/Verktyg/interfaces/iredis"
 	"github.com/spelens-gud/Verktyg/kits/kdb"
 )
@@ -21,9 +20,9 @@ func (r *redisClient) Raw() redis.UniversalClient {
 	return r.Client
 }
 
-func (r *redisClient) GetRedis(ctx context.Context) redis.Cmdable {
+func (r *redisClient) GetRedis() redis.Cmdable {
 	// nolint
-	return r.Client.WithContext(ctx)
+	return r.Client
 }
 
 func (r *redisClient) Close() error {

@@ -4,8 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/go-redis/redis/v8"
-
+	"github.com/redis/go-redis/v9"
 	"github.com/spelens-gud/Verktyg/interfaces/iredis"
 	"github.com/spelens-gud/Verktyg/kits/kdb"
 )
@@ -20,9 +19,9 @@ func (r *redisClusterClient) Raw() redis.UniversalClient {
 	return r.ClusterClient
 }
 
-func (r *redisClusterClient) GetRedis(ctx context.Context) redis.Cmdable {
+func (r *redisClusterClient) GetRedis() redis.Cmdable {
 	// nolint
-	return r.ClusterClient.WithContext(ctx)
+	return r.ClusterClient
 }
 
 func (r *redisClusterClient) Close() error {

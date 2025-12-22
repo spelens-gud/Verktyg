@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 
 	"github.com/spelens-gud/Verktyg/kits/knet"
 )
@@ -15,7 +15,7 @@ import (
 type (
 	Redis interface {
 		Raw() redis.UniversalClient
-		GetRedis(ctx context.Context) redis.Cmdable
+		GetRedis() redis.Cmdable
 		Close() error
 	}
 
@@ -114,7 +114,6 @@ func (config *RedisClusterConfig) Init(opts ...func(options *redis.ClusterOption
 		PoolTimeout:  time.Millisecond * time.Duration(config.DialTimeout),
 		PoolSize:     config.PoolSize,
 		MinIdleConns: config.MinIdleConns,
-		IdleTimeout:  time.Millisecond * time.Duration(config.IdleTimeout),
 	}
 
 	if config.InsecureSkipVerify {
@@ -146,7 +145,6 @@ func (config *RedisConfig) Init(opts ...func(options *redis.Options)) *redis.Opt
 		PoolTimeout:  time.Millisecond * time.Duration(config.DialTimeout),
 		PoolSize:     config.PoolSize,
 		MinIdleConns: config.MinIdleConns,
-		IdleTimeout:  time.Millisecond * time.Duration(config.IdleTimeout),
 	}
 
 	if config.InsecureSkipVerify {

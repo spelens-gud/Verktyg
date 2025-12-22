@@ -22,10 +22,10 @@ func TestRedisCancel(t *testing.T) {
 	defer cli.Close()
 
 	ctx, cf := context.WithCancel(context.Background())
-	t.Log(cli.GetRedis(ctx).Set(ctx, "xxx", "dddd", 0).Err())
-	t.Log(cli.GetRedis(ctx).Get(ctx, "xxx2").Err())
+	t.Log(cli.GetRedis().Set(ctx, "xxx", "dddd", 0).Err())
+	t.Log(cli.GetRedis().Get(ctx, "xxx2").Err())
 	cf()
-	t.Log(cli.GetRedis(ctx).Get(ctx, "xxx").Err())
+	t.Log(cli.GetRedis().Get(ctx, "xxx").Err())
 }
 
 func TestRedis(t *testing.T) {
@@ -41,7 +41,7 @@ func TestRedis(t *testing.T) {
 	defer cli.Close()
 
 	eg := errgroup.Group{}
-	redis := cli.GetRedis(context.Background())
+	redis := cli.GetRedis()
 	for i := 0; i < 100; i++ {
 		eg.Go(func() error {
 			err = redis.LPush(context.Background(), "dffhd", "sgadasdg").Err()
@@ -67,7 +67,7 @@ func BenchmarkRedis(b *testing.B) {
 	if err != nil {
 		b.Fatalf("%+v", err)
 	}
-	redis := cli.GetRedis(context.Background())
+	redis := cli.GetRedis()
 	b.ReportAllocs()
 	b.ResetTimer()
 	b.RunParallel(func(pb *testing.PB) {
@@ -93,7 +93,7 @@ func TestRedisCluster(t *testing.T) {
 	defer cli.Close()
 
 	eg := errgroup.Group{}
-	redis := cli.GetRedis(context.Background())
+	redis := cli.GetRedis()
 	for i := 0; i < 1000; i++ {
 		eg.Go(func() error {
 			err = redis.Set(context.Background(), "gassags", "sgadasdg", 0).Err()

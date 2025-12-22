@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-redis/redis/v8"
 	"github.com/go-sql-driver/mysql"
+	"github.com/redis/go-redis/v9"
 
 	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
 )
