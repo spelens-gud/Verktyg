@@ -7,8 +7,8 @@ import (
 
 	"github.com/redis/go-redis/v9"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iredis"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
+	"github.com/spelens-gud/Verktyg/interfaces/iredis"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
 )
 
 var _ iredis.Redis = &redisClient{}

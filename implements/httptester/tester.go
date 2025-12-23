@@ -13,10 +13,10 @@ import (
 	"path"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/implements/httpreq"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itest"
-	"git.bestfulfill.tech/devops/go-core/kits/kurl"
+	"github.com/spelens-gud/Verktyg/implements/httpreq"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/itest"
+	"github.com/spelens-gud/Verktyg/kits/kurl"
 )
 
 var (

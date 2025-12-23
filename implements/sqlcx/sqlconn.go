@@ -11,11 +11,11 @@ import (
 	"github.com/lib/pq"
 	"github.com/ngrok/sqlmw"
 
-	"git.bestfulfill.tech/devops/go-core/implements/promdb"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg/implements/promdb"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
+	"github.com/spelens-gud/Verktyg/kits/kenv/envflag"
 )
 
 func GetDriver(name string) (d driver.Driver) {

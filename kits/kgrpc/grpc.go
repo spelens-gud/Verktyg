@@ -1,8 +1,8 @@
 package kgrpc
 
 import (
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/kgrpc/interceptors"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/kgrpc/interceptors"
 	"google.golang.org/grpc"
 )
 

@@ -3,7 +3,7 @@ package logger
 import (
 	"log"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger/internal"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger/internal"
 )
 
 func InitStandardLogger() {

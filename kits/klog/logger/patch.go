@@ -3,7 +3,7 @@ package logger
 import (
 	"context"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 type FieldPatch map[string]func(ctx context.Context) interface{}

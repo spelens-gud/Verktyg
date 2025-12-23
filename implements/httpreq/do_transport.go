@@ -11,11 +11,11 @@ import (
 	"sync"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/implements/promhttp"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/implements/promhttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 )
 
 type transporter struct {

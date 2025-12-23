@@ -9,10 +9,10 @@ import (
 	"github.com/SkyAPM/go2sky/propagation"
 	"github.com/SkyAPM/go2sky/reporter"
 
-	"git.bestfulfill.tech/devops/go-core/implements/skytrace/samplereport"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/skytrace/samplereport"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var (
@@ -127,7 +127,7 @@ func (t Tracer) extractFromMetadata(ctx context.Context, name string, metadata m
 	xRequestID := itrace.GetRequestIDFromMetadata(metadata, extReqIDKeys...)
 
 	// 从sw8提取上游
-	sp, nCtx, err := t.CreateEntrySpan(ctx, name, func() (s string, err error) {
+	sp, nCtx, err := t.CreateEntrySpan(ctx, name, func(headerKey string) (s string, err error) {
 		return textproto.MIMEHeader(metadata).Get(propagation.Header), nil
 	})
 
@@ -157,11 +157,11 @@ func (t Tracer) StartExitSpan(ctx context.Context, name, peer string) (span itra
 	return t.startExitSpan(ctx, name, peer, noopInject)
 }
 
-func noopInject(header string) error {
+func noopInject(henderKey, headerValue string) error {
 	return nil
 }
 
-func (t Tracer) startExitSpan(ctx context.Context, name, peer string, inject func(header string) error) (span *Span) {
+func (t Tracer) startExitSpan(ctx context.Context, name, peer string, inject func(henderKey, headerValue string) error) (span *Span) {
 	traceID := itrace.FromContext(ctx)
 
 	if inject == nil {
@@ -182,8 +182,8 @@ func (t Tracer) startExitSpan(ctx context.Context, name, peer string, inject fun
 
 func (t Tracer) injectMetadata(ctx context.Context, name, peer string, metadata map[string][]string, extReqIDKeys ...string) (span *Span) {
 	traceID := itrace.FromContext(ctx)
-	return t.startExitSpan(ctx, name, peer, func(header string) error {
-		textproto.MIMEHeader(metadata).Add(propagation.Header, header)
+	return t.startExitSpan(ctx, name, peer, func(headerKey, headerValue string) error {
+		textproto.MIMEHeader(metadata).Add(propagation.Header, headerValue)
 		itrace.SetMetadataRequestID(traceID, metadata, extReqIDKeys...)
 		return nil
 	})

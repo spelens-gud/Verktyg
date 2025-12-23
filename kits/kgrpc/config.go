@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/kgo"
 )
 
 // Config struct gRPC 服务器配置.

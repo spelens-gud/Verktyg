@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var envTimeout = os.Getenv("PING_DB_TIMEOUT_SECONDS")

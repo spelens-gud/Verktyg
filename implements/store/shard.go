@@ -4,7 +4,7 @@ import (
 	"hash/crc32"
 	"io"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
 )
 
 type ShardStore struct {

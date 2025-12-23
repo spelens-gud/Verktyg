@@ -3,7 +3,7 @@
 ## 语言与版本
 
 - **Go**: 1.23+
-- **模块路径**: `git.bestfulfill.tech/devops/go-core`
+- **模块路径**: `github.com/spelens-gud/Verktyg`
 
 ## 核心依赖
 
@@ -21,7 +21,7 @@
 - `github.com/patrickmn/go-cache` - 内存缓存
 
 ### 消息队列
-- `github.com/Shopify/sarama` - Kafka 客户端
+- `github.com/IBM/sarama` - Kafka 客户端
 - `github.com/bsm/sarama-cluster` - Kafka 消费者组
 
 ### 配置中心
@@ -66,7 +66,7 @@ go test ./...
 go build ./...
 
 # 代码格式化
-goimports -format-only -w -l -local git.bestfulfill.tech/devops/go-core ./
+goimports -format-only -w -l -local github.com/spelens-gud/Verktyg ./
 
 # Lint 检查
 golangci-lint run ./...

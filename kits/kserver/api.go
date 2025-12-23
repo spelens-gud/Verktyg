@@ -7,10 +7,10 @@ import (
 	svrlessgin "github.com/Just-maple/serverless-gin"
 	"github.com/gin-gonic/gin"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ierror"
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
-	"git.bestfulfill.tech/devops/go-core/kits/kerror/errorx"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type (

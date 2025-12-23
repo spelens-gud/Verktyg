@@ -7,7 +7,7 @@ import (
 	"github.com/go-sql-driver/mysql"
 	"github.com/redis/go-redis/v9"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
 )
 
 type dbUsageMetrics struct {

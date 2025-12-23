@@ -3,8 +3,8 @@
 package interceptors
 
 import (
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/envflag"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/kenv/envflag"
 	"google.golang.org/grpc"
 )
 

@@ -4,19 +4,33 @@ import (
 	"context"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
 
+	shopifySarama "github.com/Shopify/sarama"
 	cluster "github.com/bsm/sarama-cluster"
 
-	"github.com/Shopify/sarama"
+	"github.com/IBM/sarama"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func doConsume(ctx context.Context, address, typ string, msg *sarama.ConsumerMessage, do func(ctx context.Context) error) {
 	sp, ctx := startConsumerTrace(ctx, msg, address, msg.Topic, typ)
+	itrace.SetMqMessageTag(sp, int(msg.Partition), int(msg.Offset))
+	defer func(startTime time.Time, err error) {
+		kdb.KafkaConsumeMetrics(address, msg.Topic, err, time.Since(startTime))
+		if err != nil {
+			sp.Error(err, logger.FromContext(ctx).FieldData())
+		}
+		sp.Finish()
+	}(time.Now(), do(ctx))
+}
+
+// doConsumeCluster 处理 cluster 消费（使用 Shopify/sarama 类型）
+func doConsumeCluster(ctx context.Context, address, typ string, msg *shopifySarama.ConsumerMessage, do func(ctx context.Context) error) {
+	sp, ctx := startConsumerTraceCluster(ctx, msg, address, msg.Topic, typ)
 	itrace.SetMqMessageTag(sp, int(msg.Partition), int(msg.Offset))
 	defer func(startTime time.Time, err error) {
 		kdb.KafkaConsumeMetrics(address, msg.Topic, err, time.Since(startTime))
@@ -57,7 +71,7 @@ func (c *clusterClient) Consume(groupID string, topics []string, handleFunc func
 		defer consumer.Close()
 		consumer.ConsumeWithHandler(ctx, clusterConsumeFuncHandler{
 			onError: defaultOnError,
-			onMessages: func(ctx context.Context, consumer *cluster.Consumer, message *sarama.ConsumerMessage) error {
+			onMessages: func(ctx context.Context, consumer *cluster.Consumer, message *shopifySarama.ConsumerMessage) error {
 				return handleFunc(ctx, message.Value)
 			},
 		})

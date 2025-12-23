@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itest"
+	"github.com/spelens-gud/Verktyg/interfaces/itest"
 )
 
 func WithDataPacker(d DataPacker) Option {

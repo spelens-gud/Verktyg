@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/internal/incontext"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/internal/incontext"
 )
 
 var defaultTracer = itrace.NoopTracer

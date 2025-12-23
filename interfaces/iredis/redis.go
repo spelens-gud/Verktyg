@@ -9,7 +9,7 @@ import (
 
 	"github.com/redis/go-redis/v9"
 
-	"git.bestfulfill.tech/devops/go-core/kits/knet"
+	"github.com/spelens-gud/Verktyg/kits/knet"
 )
 
 type (

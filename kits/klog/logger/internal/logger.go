@@ -7,7 +7,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 var (

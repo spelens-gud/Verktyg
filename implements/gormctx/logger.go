@@ -9,7 +9,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type gormLogger struct {

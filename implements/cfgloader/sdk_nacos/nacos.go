@@ -14,12 +14,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/implements/httpreq"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ierror"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/kits/kerror/errorx"
-	"git.bestfulfill.tech/devops/go-core/kits/kjson"
+	"github.com/spelens-gud/Verktyg/implements/httpreq"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/kjson"
 )
 
 type Client interface {

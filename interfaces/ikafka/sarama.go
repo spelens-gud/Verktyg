@@ -4,11 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/Shopify/sarama"
+	"github.com/IBM/sarama"
+	shopifySarama "github.com/Shopify/sarama"
 	cluster "github.com/bsm/sarama-cluster"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/knet"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/knet"
 )
 
 type Client interface {
@@ -85,9 +86,11 @@ type (
 	ClientOption  func(config *sarama.Config)
 	ClusterOption func(config *cluster.Config)
 
+	// ClusterConsumeHandler cluster 消费处理器
+	// 注意：使用 Shopify/sarama 类型，因为 bsm/sarama-cluster 依赖旧版 sarama
 	ClusterConsumeHandler interface {
 		ErrorHandler
-		OnMessage(ctx context.Context, consumer *cluster.Consumer, message *sarama.ConsumerMessage) error
+		OnMessage(ctx context.Context, consumer *cluster.Consumer, message *shopifySarama.ConsumerMessage) error
 		OnNotifications(notification *cluster.Notification)
 	}
 )
@@ -131,7 +134,17 @@ func (cfg *ClientConfig) Init(configs ...ClientOption) {
 }
 
 func (cfg *ClusterConfig) Init(configs ...ClusterOption) {
-	initSaramaConfig(&cfg.Config.Config)
+	// 注意：cluster.Config 使用的是 Shopify/sarama，与 IBM/sarama 不兼容
+	// 因此不能调用 initSaramaConfig，需要单独配置
+	if cfg.Config.Config.Net.DialTimeout == 0 {
+		cfg.Config.Config.Net.DialTimeout = time.Second * 5
+	}
+	if cfg.Config.Config.Net.KeepAlive == 0 {
+		cfg.Config.Config.Net.KeepAlive = time.Second * 120
+	}
+	cfg.Config.Config.Metadata.RefreshFrequency = time.Minute * 3
+	cfg.Config.Config.ClientID = iconfig.GetApplicationNameSpace() + "_" + iconfig.GetApplicationAppName()
+
 	for _, c := range configs {
 		c(cfg.Config)
 	}

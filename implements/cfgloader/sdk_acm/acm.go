@@ -5,13 +5,13 @@ import (
 	"net/http"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 
-	"git.bestfulfill.tech/devops/go-core/implements/httpreq"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ierror"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/kits/kerror/errorx"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/httpreq"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type Client interface {

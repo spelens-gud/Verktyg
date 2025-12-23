@@ -6,7 +6,7 @@ import (
 	"github.com/jinzhu/gorm"
 	gorm2 "gorm.io/gorm"
 
-	"git.bestfulfill.tech/devops/go-core/internal/incontext"
+	"github.com/spelens-gud/Verktyg/internal/incontext"
 )
 
 type Gorm2SQL interface {

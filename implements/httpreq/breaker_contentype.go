@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
 )
 
 var _ ihttp.Client = &BreakerContentTypeClient{}

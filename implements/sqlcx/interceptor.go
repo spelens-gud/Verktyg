@@ -8,8 +8,8 @@ import (
 
 	"github.com/ngrok/sqlmw"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 type Interceptor struct {
@@ -54,7 +54,7 @@ func (i Interceptor) ConnectorConnect(ctx context.Context, connector driver.Conn
 	return ret, err
 }
 
-func (i Interceptor) ConnBeginTx(ctx context.Context, tx driver.ConnBeginTx, options driver.TxOptions) (driver.Tx, error) {
+func (i Interceptor) ConnBeginTx(ctx context.Context, tx driver.ConnBeginTx, options driver.TxOptions) (context.Context, driver.Tx, error) {
 	txSpan, ctx := startProgressSpan(ctx, i.config, "interceptor:Transaction", "")
 
 	reporter := i.newSqlTelemetryReporter(ctx, "driver:ConnBeginTx", "")
@@ -72,7 +72,7 @@ func (i Interceptor) ConnBeginTx(ctx context.Context, tx driver.ConnBeginTx, opt
 		txSpan.Finish()
 	}
 
-	return ret, err
+	return ctx, ret, err
 }
 
 func (i Interceptor) TxCommit(ctx context.Context, tx driver.Tx) error {
@@ -106,7 +106,7 @@ func (i Interceptor) ConnExecContext(ctx context.Context, context driver.ExecerC
 	return ret, err
 }
 
-func (i Interceptor) ConnQueryContext(ctx context.Context, context driver.QueryerContext, s string, values []driver.NamedValue) (driver.Rows, error) {
+func (i Interceptor) ConnQueryContext(ctx context.Context, context driver.QueryerContext, s string, values []driver.NamedValue) (context.Context, driver.Rows, error) {
 	querySpan, ctx := startProgressSpan(ctx, i.config, "interceptor:ConnQueryRows", s)
 
 	reporter := i.newSqlTelemetryReporter(ctx, "driver:ConnQuery", s)
@@ -122,6 +122,7 @@ func (i Interceptor) ConnQueryContext(ctx context.Context, context driver.Querye
 			querySpan: querySpan,
 			ctx:       nCtx,
 		}
+		return nCtx, ret, err
 	} else {
 		if err != driver.ErrSkip {
 			querySpan.Error(err, nil)
@@ -131,7 +132,7 @@ func (i Interceptor) ConnQueryContext(ctx context.Context, context driver.Querye
 		querySpan.Finish()
 	}
 
-	return ret, err
+	return ctx, ret, err
 }
 
 func (i Interceptor) RowsNext(ctx context.Context, rows driver.Rows, values []driver.Value) error {
@@ -173,11 +174,11 @@ func (i Interceptor) RowsClose(ctx context.Context, rows driver.Rows) error {
 	return err
 }
 
-func (i Interceptor) ConnPrepareContext(ctx context.Context, context driver.ConnPrepareContext, s string) (driver.Stmt, error) {
+func (i Interceptor) ConnPrepareContext(ctx context.Context, context driver.ConnPrepareContext, s string) (context.Context, driver.Stmt, error) {
 	reporter := i.newSqlTelemetryReporter(ctx, "driver:ConnPrepareStmt", s)
 	ret, err := context.PrepareContext(ctx, s)
 	reporter.Report(err)
-	return ret, err
+	return ctx, ret, err
 }
 
 func (i Interceptor) StmtExecContext(ctx context.Context, context driver.StmtExecContext, s string, values []driver.NamedValue) (driver.Result, error) {
@@ -187,7 +188,7 @@ func (i Interceptor) StmtExecContext(ctx context.Context, context driver.StmtExe
 	return ret, err
 }
 
-func (i Interceptor) StmtQueryContext(ctx context.Context, context driver.StmtQueryContext, s string, values []driver.NamedValue) (driver.Rows, error) {
+func (i Interceptor) StmtQueryContext(ctx context.Context, context driver.StmtQueryContext, s string, values []driver.NamedValue) (context.Context, driver.Rows, error) {
 	querySpan, ctx := startProgressSpan(ctx, i.config, "interceptor:StmtQueryRows", s)
 
 	reporter := i.newSqlTelemetryReporter(ctx, "driver:StmtQuery", s)
@@ -203,11 +204,12 @@ func (i Interceptor) StmtQueryContext(ctx context.Context, context driver.StmtQu
 			querySpan: querySpan,
 			ctx:       nCtx,
 		}
+		return nCtx, ret, err
 	} else {
 		querySpan.Error(err, nil)
 		querySpan.Finish()
 	}
-	return ret, err
+	return ctx, ret, err
 }
 
 func (i Interceptor) StmtClose(ctx context.Context, stmt driver.Stmt) error {

@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func StartDaemon(ctx context.Context, startFunc func(context.Context, *errgroup.Group)) {

@@ -3,7 +3,7 @@ package skafka
 import (
 	"context"
 
-	"github.com/Shopify/sarama"
+	"github.com/IBM/sarama"
 )
 
 func (c *client) SyncSendMessageX(ctx context.Context, topic, key string, message interface{}) (err error) {

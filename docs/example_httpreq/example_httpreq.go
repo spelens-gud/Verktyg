@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"git.bestfulfill.tech/devops/go-core/implements/httpreq"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/httpreq"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var (

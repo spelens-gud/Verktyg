@@ -1,7 +1,7 @@
 package memcached
 
 import (
-	"git.bestfulfill.tech/devops/go-core/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
 )
 
 func init() {

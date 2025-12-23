@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/SkyAPM/go2sky"
-	v3 "github.com/SkyAPM/go2sky/reporter/grpc/language-agent"
 	"github.com/opentracing/opentracing-go/ext"
+	agentv3 "skywalking.apache.org/repo/goapi/collect/language/agent/v3"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 type Span struct {
@@ -59,7 +59,7 @@ func (s *Span) Finish() {
 
 func (s *Span) SetLayer(i int) {
 	// nolint
-	s.Span.SetSpanLayer(v3.SpanLayer(i))
+	s.Span.SetSpanLayer(agentv3.SpanLayer(i))
 }
 
 func (s *Span) SetPeer(peer string) {

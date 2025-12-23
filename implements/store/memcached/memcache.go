@@ -7,9 +7,9 @@ import (
 
 	"github.com/bradfitz/gomemcache/memcache"
 
-	"git.bestfulfill.tech/devops/go-core/implements/store/promstore"
-	"git.bestfulfill.tech/devops/go-core/interfaces/istore"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
+	"github.com/spelens-gud/Verktyg/implements/store/promstore"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
 )
 
 type Store struct {

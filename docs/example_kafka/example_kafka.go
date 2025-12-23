@@ -6,9 +6,9 @@ import (
 	"math/rand"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/implements/skafka"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
-	"git.bestfulfill.tech/devops/go-core/kits/kruntime"
+	"github.com/spelens-gud/Verktyg/implements/skafka"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/kruntime"
 )
 
 type Order struct {

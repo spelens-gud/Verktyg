@@ -9,8 +9,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kgo"
-	"git.bestfulfill.tech/devops/go-core/version"
+	"github.com/spelens-gud/Verktyg/kits/kgo"
+	"github.com/spelens-gud/Verktyg/version"
 )
 
 const (

@@ -5,17 +5,17 @@ import (
 	"testing"
 	"time"
 
-	sentinelgin "github.com/alibaba/sentinel-golang/adapter/gin"
+	sentinelgin "github.com/alibaba/sentinel-golang/pkg/adapters/gin"
 	"github.com/gin-gonic/gin"
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go"
 	jaegerConfig "github.com/uber/jaeger-client-go/config"
 
-	"git.bestfulfill.tech/devops/go-core/implements/otrace"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/gin_middles"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/metrics"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/implements/otrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/kits/kserver/gin_middles"
+	"github.com/spelens-gud/Verktyg/kits/kserver/metrics"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 )
 
 var (

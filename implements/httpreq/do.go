@@ -8,12 +8,12 @@ import (
 	"net/http"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
-	"git.bestfulfill.tech/devops/go-core/kits/kerror/errorx"
-	"git.bestfulfill.tech/devops/go-core/kits/kgo/buffpool"
-	"git.bestfulfill.tech/devops/go-core/version"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/kgo/buffpool"
+	"github.com/spelens-gud/Verktyg/version"
 )
 
 const (

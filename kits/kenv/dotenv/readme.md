@@ -6,7 +6,7 @@
 package main
 
 import (
-	"git.bestfulfill.tech/devops/go-core/kits/kenv/dotenv"
+	"github.com/spelens-gud/Verktyg/kits/kenv/dotenv"
 
 	"fmt"
 	"os"

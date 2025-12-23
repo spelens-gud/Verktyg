@@ -10,14 +10,14 @@ import (
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 
-	"git.bestfulfill.tech/devops/go-core/implements/redisx"
-	"git.bestfulfill.tech/devops/go-core/implements/skytrace"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iredis"
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver"
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/gin_middles"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/implements/redisx"
+	"github.com/spelens-gud/Verktyg/implements/skytrace"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/iredis"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/kserver"
+	"github.com/spelens-gud/Verktyg/kits/kserver/gin_middles"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 )
 
 func TestExtractRequestID(t *testing.T) {

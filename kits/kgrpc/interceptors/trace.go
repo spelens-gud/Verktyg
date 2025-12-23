@@ -3,7 +3,7 @@ package interceptors
 import (
 	"context"
 
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

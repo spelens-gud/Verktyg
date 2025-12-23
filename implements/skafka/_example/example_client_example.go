@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Shopify/sarama"
+	"github.com/IBM/sarama"
 
-	"git.bestfulfill.tech/devops/go-core/implements/skafka"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ikafka"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/skafka"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var (

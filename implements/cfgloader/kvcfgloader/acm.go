@@ -3,8 +3,8 @@ package kvcfgloader
 import (
 	"context"
 
-	"git.bestfulfill.tech/devops/go-core/implements/cfgloader/sdk_acm"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/implements/cfgloader/sdk_acm"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
 )
 
 // 应用KV配置

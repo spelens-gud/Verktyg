@@ -3,7 +3,7 @@ package itest
 import (
 	"net/http"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
 )
 
 type (

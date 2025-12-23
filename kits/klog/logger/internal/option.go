@@ -3,7 +3,7 @@ package internal
 import (
 	"io"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 type (

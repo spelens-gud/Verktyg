@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/Shopify/sarama"
+	"github.com/IBM/sarama"
 
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func init() {

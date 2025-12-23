@@ -8,7 +8,7 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 var (

@@ -11,7 +11,7 @@ import (
 
 	"github.com/go-sql-driver/mysql"
 
-	"git.bestfulfill.tech/devops/go-core/kits/knet"
+	"github.com/spelens-gud/Verktyg/kits/knet"
 )
 
 type (

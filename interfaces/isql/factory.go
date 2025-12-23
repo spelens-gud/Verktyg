@@ -1,7 +1,7 @@
 package isql
 
 import (
-	"git.bestfulfill.tech/devops/go-core/kits/kstruct"
+	"github.com/spelens-gud/Verktyg/kits/kstruct"
 )
 
 type (

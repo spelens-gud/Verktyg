@@ -12,7 +12,7 @@ import (
 
 	"go.uber.org/multierr"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
 )
 
 type ShardCache struct {

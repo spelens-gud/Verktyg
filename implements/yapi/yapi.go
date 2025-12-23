@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"sync"
 
-	"git.bestfulfill.tech/devops/go-core/implements/httpreq"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
-	"git.bestfulfill.tech/devops/go-core/interfaces/itest"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iyapi"
+	"github.com/spelens-gud/Verktyg/implements/httpreq"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/itest"
+	"github.com/spelens-gud/Verktyg/interfaces/iyapi"
 )
 
 type (

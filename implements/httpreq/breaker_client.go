@@ -1,7 +1,7 @@
 package httpreq
 
 import (
-	"git.bestfulfill.tech/devops/go-core/interfaces/ihttp"
+	"github.com/spelens-gud/Verktyg/interfaces/ihttp"
 )
 
 var _ ihttp.Client = &BreakerJsonClient{}

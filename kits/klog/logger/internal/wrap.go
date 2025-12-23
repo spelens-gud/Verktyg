@@ -3,7 +3,7 @@ package internal
 import (
 	"runtime"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 func init() {

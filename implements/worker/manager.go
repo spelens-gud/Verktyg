@@ -9,17 +9,17 @@ import (
 	"sync"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kserver/govern_server"
+	"github.com/spelens-gud/Verktyg/kits/kserver/govern_server"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 
 	"github.com/robfig/cron/v3"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kruntime"
+	"github.com/spelens-gud/Verktyg/kits/kruntime"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
-	"git.bestfulfill.tech/devops/go-core/interfaces/iworker"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/iworker"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type workerManager struct {

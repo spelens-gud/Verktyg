@@ -7,7 +7,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 func Ticker(ctx context.Context, eg *errgroup.Group, seconds int, f func(ctx context.Context), opts ...Option) {

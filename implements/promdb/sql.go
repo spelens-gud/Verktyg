@@ -6,7 +6,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
 )
 
 type SqlStatsGetter interface {

@@ -9,7 +9,7 @@ import (
 	"github.com/uber/jaeger-client-go"
 	jaegerConfig "github.com/uber/jaeger-client-go/config"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/itrace"
+	"github.com/spelens-gud/Verktyg/interfaces/itrace"
 )
 
 func TestExtractRequestID(t *testing.T) {

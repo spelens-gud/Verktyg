@@ -17,7 +17,8 @@ type logReporter struct {
 	lg Logger
 }
 
-func (lr *logReporter) Boot(service string, serviceInstance string) {}
+func (lr *logReporter) Boot(service string, serviceInstance string, _ []go2sky.AgentConfigChangeWatcher) {
+}
 
 func (lr *logReporter) Send(spans []go2sky.ReportedSpan) {
 	b, err := jsoniter.ConfigFastest.Marshal(spans)

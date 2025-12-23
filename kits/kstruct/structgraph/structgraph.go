@@ -3,7 +3,7 @@ package structgraph
 import (
 	"github.com/Just-maple/structgraph"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kstruct/structgraphx"
+	"github.com/spelens-gud/Verktyg/kits/kstruct/structgraphx"
 )
 
 // Deprecated: Use structgraphx.GenStructGraph

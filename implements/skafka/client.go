@@ -3,10 +3,10 @@ package skafka
 import (
 	"sync"
 
-	"github.com/Shopify/sarama"
+	"github.com/IBM/sarama"
 	"github.com/pkg/errors"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
 )
 
 type client struct {

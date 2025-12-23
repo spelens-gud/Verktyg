@@ -4,7 +4,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/redis/go-redis/v9"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/imetrics"
+	"github.com/spelens-gud/Verktyg/interfaces/imetrics"
 )
 
 type RedisStatsGetter interface {

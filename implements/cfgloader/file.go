@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var _ iconfig.ConfigLoader = &files{}

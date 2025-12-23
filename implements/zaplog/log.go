@@ -7,7 +7,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
 )
 
 var _ ilog.Logger = &Entry{}

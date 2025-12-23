@@ -7,8 +7,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"git.bestfulfill.tech/devops/go-core/kits/kcontext"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/kits/kcontext"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 func TestMetadata(t *testing.T) {

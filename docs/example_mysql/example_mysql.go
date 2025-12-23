@@ -8,9 +8,9 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"git.bestfulfill.tech/devops/go-core/implements/gormctx"
-	"git.bestfulfill.tech/devops/go-core/interfaces/isql"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/implements/gormctx"
+	"github.com/spelens-gud/Verktyg/interfaces/isql"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 var sqlConfig = isql.SQLConfig{

@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ilog"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger/internal"
-	"git.bestfulfill.tech/devops/go-core/kits/ktrace/tracer"
+	"github.com/spelens-gud/Verktyg/interfaces/ilog"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger/internal"
+	"github.com/spelens-gud/Verktyg/kits/ktrace/tracer"
 )
 
 type tracePatch struct {

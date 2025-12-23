@@ -1,7 +1,7 @@
 package go2ts
 
 import (
-	"git.bestfulfill.tech/devops/go-core/interfaces/idoc"
+	"github.com/spelens-gud/Verktyg/interfaces/idoc"
 )
 
 type Parser struct {

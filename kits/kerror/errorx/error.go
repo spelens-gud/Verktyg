@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ierror"
-	"git.bestfulfill.tech/devops/go-core/kits/kerror/internal/errors"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/kits/kerror/internal/errors"
 )
 
 type Error struct {

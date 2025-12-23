@@ -3,14 +3,12 @@ package skafka
 import (
 	"context"
 
-	"github.com/Shopify/sarama"
-
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
-
+	shopifySarama "github.com/Shopify/sarama"
 	cluster "github.com/bsm/sarama-cluster"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/ikafka"
-	"git.bestfulfill.tech/devops/go-core/kits/kdb"
+	"github.com/spelens-gud/Verktyg/interfaces/ikafka"
+	"github.com/spelens-gud/Verktyg/kits/kdb"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type clusterConsumer struct {
@@ -44,7 +42,7 @@ func (consumer *clusterConsumer) ConsumeWithHandler(ctx context.Context, handler
 			return
 		case msg := <-consumer.consumer.Messages():
 			if msg != nil {
-				doConsume(ctx, consumer.config.Address[0], "cluster", msg, func(ctx context.Context) error {
+				doConsumeCluster(ctx, consumer.config.Address[0], "cluster", msg, func(ctx context.Context) error {
 					return handler.OnMessage(ctx, consumer.consumer, msg)
 				})
 			}
@@ -64,7 +62,7 @@ var _ ikafka.ClusterConsumeHandler = &clusterConsumeFuncHandler{}
 
 type clusterConsumeFuncHandler struct {
 	onError         func(error)
-	onMessages      func(context.Context, *cluster.Consumer, *sarama.ConsumerMessage) error
+	onMessages      func(context.Context, *cluster.Consumer, *shopifySarama.ConsumerMessage) error
 	onNotifications func(*cluster.Notification)
 }
 
@@ -75,7 +73,7 @@ func (c clusterConsumeFuncHandler) OnError(err error) {
 	c.onError(err)
 }
 
-func (c clusterConsumeFuncHandler) OnMessage(ctx context.Context, consumer *cluster.Consumer, message *sarama.ConsumerMessage) error {
+func (c clusterConsumeFuncHandler) OnMessage(ctx context.Context, consumer *cluster.Consumer, message *shopifySarama.ConsumerMessage) error {
 	if c.onMessages == nil {
 		return nil
 	}

@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"git.bestfulfill.tech/devops/go-core/interfaces/iconfig"
-	"git.bestfulfill.tech/devops/go-core/interfaces/ierror"
-	"git.bestfulfill.tech/devops/go-core/interfaces/istore"
-	"git.bestfulfill.tech/devops/go-core/kits/kerror/errorx"
-	"git.bestfulfill.tech/devops/go-core/kits/klog/logger"
+	"github.com/spelens-gud/Verktyg/interfaces/iconfig"
+	"github.com/spelens-gud/Verktyg/interfaces/ierror"
+	"github.com/spelens-gud/Verktyg/interfaces/istore"
+	"github.com/spelens-gud/Verktyg/kits/kerror/errorx"
+	"github.com/spelens-gud/Verktyg/kits/klog/logger"
 )
 
 type StoreConfigLoader struct {
